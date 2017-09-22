@@ -14,6 +14,7 @@ examples/python/matlab_launch.py
 
 # Ignore JetBrains project files
 .idea/*
+week1/.idea
 */*/.idea
 */*/*/.idea
 
@@ -22,5 +23,6 @@ data/**/*.hdf5
 data/**/*.zip
 
 # Python
+week1/__pycache__/
 __pycache__/
 .ipynb_checkpoints
