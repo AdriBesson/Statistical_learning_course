@@ -13,8 +13,8 @@ def compute_my_ls_estimate(x, y):
 
     return np.matmul(ls_matrix, y)
 
-def compute_training_error(y, y_hat):
+def compute_l2_error(y, y_hat):
     return np.linalg.norm(y-y_hat)**2
 
-def compute_empirical_test_error(y, y_hat):
+def compute_classification_error(y, y_hat):
     return np.linalg.norm(y-y_hat, 1)
