@@ -16,11 +16,13 @@ def compute_my_ls_estimate(x, y):
     return np.matmul(ls_matrix, y)
 
 def compute_l2_error(y, y_hat):
-    return np.linalg.norm(y-y_hat)**2
+    N = np.prod(np.shape(y))
+    return 1/N*np.linalg.norm(y-y_hat)**2
 
 def compute_classification_error(y, y_hat):
+    N = np.prod(np.shape(y))
     # zero-one norm which can be calculated using the l1-norm of the difference between labels
-    return np.linalg.norm(y-y_hat, 1)
+    return 1/N*np.linalg.norm(y-y_hat, 1)
 
 def compute_knn_dist(xk, x1, dist_type='l2'):
     # Calculate the distance of xk from each coordinate of x1
