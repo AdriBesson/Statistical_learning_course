@@ -22,19 +22,24 @@ def compute_classification_error(y, y_hat):
     # zero-one norm which can be calculated using the l1-norm of the difference between labels
     return np.linalg.norm(y-y_hat, 1)
 
+def compute_knn_dist(xk, x1, dist_type='l2'):
+    # Calculate the distance of xk from each coordinate of x1
+    if dist_type is 'l2':
+        dist_xx1 = np.abs(xk - x1)
+    else:
+        raise NotImplementedError("Other norms than l2 should be implemented")
+
+    return dist_xx1
+
 def knn_estimate(x, x1, y1, neighbour_size=1, dist_type='l2'):
     y_nn = []
-    for el in x:
-        # Calculate the distance with respect to the coordinate
-        if dist_type is 'l2':
-            dist_xx1 = np.abs(el-x1)
-        else:
-            raise NotImplementedError("Other norms than l2 should be implemented")
+    for xk in x:
+        # Compute the distance between xk and x1
+        dist_xx1 = compute_knn_dist(xk, x1)
 
         # Sort the element according to their distance to the coordinate of x
         I = np.argsort(dist_xx1)
 
         # Calculate the corresponding value
         y_nn.append(np.mean(y1[I[0:neighbour_size]]))
-
     return np.asarray(y_nn)
