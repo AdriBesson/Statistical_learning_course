@@ -6,7 +6,7 @@ doc/*
 !doc/Doxyfile.in
 
 # Ignore csv files
-*.csv
+# *.csv
 
 # Ignore matlab related files and folders
 #matlab/*
