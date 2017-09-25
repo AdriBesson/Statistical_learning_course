@@ -7,6 +7,16 @@ Jupyter Ipython notebooks for the exercises of the course [Statistical learning]
 
 ## Installation
 1. Install Python 3.6 and [Anaconda].
+1. Create an anaconda environment.
+    ```bash
+    conda create -n statistical_learning python=3.6
+    source activate
+    ```
+1. Install the python dependencies
+    ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
 1. Clone or download the repository.
     ```bash
     git clone https://github.com/AdriBesson/Statistical_learning_course
