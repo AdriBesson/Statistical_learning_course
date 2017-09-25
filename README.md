@@ -24,7 +24,7 @@ Jupyter Ipython notebooks for the exercises of the course [Statistical learning]
     ```
 
 ## Usage
-1. Go in the desired directory and un jupyter notebook
+1. Go in the desired directory and run jupyter notebook
     ```bash
     cd week1
     jupyter notebook
