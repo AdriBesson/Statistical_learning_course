@@ -1,0 +1,28 @@
+# Ignore build files and binaries except .so and cpu and gpu bin
+build/*
+
+# Ignore doc except doxyfile
+doc/*
+!doc/Doxyfile.in
+
+# Ignore csv files
+# *.csv
+
+# Ignore matlab related files and folders
+#matlab/*
+examples/python/matlab_launch.py
+
+# Ignore JetBrains project files
+.idea/*
+week1/.idea
+*/*/.idea
+*/*/*/.idea
+
+# Ignore .hdf5 data files
+data/**/*.hdf5
+data/**/*.zip
+
+# Python
+week1/__pycache__/
+__pycache__/
+.ipynb_checkpoints
