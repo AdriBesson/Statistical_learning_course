@@ -1,5 +1,4 @@
 import numpy as np
-
 def compute_my_ls_estimate(x, y):
 
     # Compute X'X
@@ -26,8 +25,10 @@ def compute_classification_error(y, y_hat):
 
 def compute_knn_dist(xk, x1, dist_type='l2'):
     # Calculate the distance of xk from each coordinate of x1
+    dist_xx1 = []
     if dist_type is 'l2':
-        dist_xx1 = np.abs(xk - x1)
+        for x1k in x1:
+            dist_xx1.append(np.linalg.norm(xk-x1k))
     else:
         raise NotImplementedError("Other norms than l2 should be implemented")
 
