@@ -1,5 +1,4 @@
 import numpy as np
-
 def compute_my_ls_estimate(x, y):
 
     # Compute X'X
@@ -20,14 +19,13 @@ def compute_l2_error(y, y_hat):
     return 1/N*np.linalg.norm(y-y_hat)**2
 
 def compute_classification_error(y, y_hat):
-    N = np.prod(np.shape(y))
     # zero-one norm which can be calculated using the l1-norm of the difference between labels
-    return 1/N*np.linalg.norm(y-y_hat, 1)
+    return np.mean(np.abs(y-y_hat))
 
 def compute_knn_dist(xk, x1, dist_type='l2'):
     # Calculate the distance of xk from each coordinate of x1
     if dist_type is 'l2':
-        dist_xx1 = np.abs(xk - x1)
+            dist_xx1=[np.linalg.norm(xk-x1k) for x1k in x1]
     else:
         raise NotImplementedError("Other norms than l2 should be implemented")
 
@@ -43,5 +41,10 @@ def knn_estimate(x, x1, y1, neighbour_size=1, dist_type='l2'):
         I = np.argsort(dist_xx1)
 
         # Calculate the corresponding value
-        y_nn.append(np.mean(y1[I[0:neighbour_size]]))
+        y_knn = np.mean(y1[I[0:neighbour_size]])
+
+        # Give the label to the corresponding value
+        label = y_knn>=0.5
+        y_nn.append(label)
     return np.asarray(y_nn)
+
