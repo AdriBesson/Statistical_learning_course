@@ -28,7 +28,7 @@ n_samples = features.shape[0]
 # Create training set and test set
 train_size = 152/252
 test_size = 100/252
-features_train, features_test, targets_train, targets_test = model_selection.train_test_split(features, targets, train_size=train_size, test_size=test_size, random_state=1, shuffle=True)
+features_train, features_test, targets_train, targets_test = model_selection.train_test_split(features, targets, train_size=train_size, test_size=test_size, random_state=10, shuffle=True)
 
 # Cosnidered number of features
 list_n_features = np.arange(1, 13)
@@ -46,10 +46,6 @@ for n_features in list_n_features:
     rss_test = mse(y_true=targets_test, y_pred=predicted_target)
     test_error_bss.append(rss_test)
 
-    # Check if the error is minimum
-    if rss_test < min_test_rss:
-        best_model_cv = best_model_bss
-        best_k = n_features
 
 # Forward stepwise selection
 linear_model = lm.LinearRegression(fit_intercept=True, normalize=False, copy_X=True, n_jobs=1)
@@ -64,10 +60,6 @@ for n_features in list_n_features:
     rss_test = mse(y_true=targets_test, y_pred=predicted_target)
     test_error_fwd.append(rss_test)
 
-    # Check if the error is minimum
-    if rss_test < min_test_rss:
-        best_model_cv = best_model_fwd
-        best_k = n_features
 
 # Backward stepwise selection
 linear_model = lm.LinearRegression(fit_intercept=True, normalize=False, copy_X=True, n_jobs=1)
@@ -82,21 +74,28 @@ for n_features in list_n_features:
     rss_test = mse(y_true=targets_test, y_pred=predicted_target)
     test_error_bwd.append(rss_test)
 
-    # Check if the error is minimum
-    if rss_test < min_test_rss:
-        best_model_cv = best_model_bwd
-        best_k = n_features
 
-plt.subplots(131)
-plt.scatter(list_n_features, test_error_fwd, label='Forward stepwise selection')
+# Plots of the mean squared error for the three methods
+plt.subplot(131)
+plt.plot(list_n_features, test_error_fwd, label='Forward stepwise selection')
+plt.scatter(list_n_features[np.argmin(test_error_fwd)], np.min(test_error_fwd))
+plt.plot()
 plt.xlabel('Number of features')
 plt.ylabel('Test RSS')
-plt.subplots(132)
-plt.scatter(list_n_features, test_error_bwd[::-1], label='backward stepwise selection')
+plt.title('Forward stepwise selection')
+
+plt.subplot(132)
+plt.plot(list_n_features, test_error_bwd[::-1], label='backward stepwise selection')
+plt.scatter(list_n_features[np.argmin(test_error_bwd[::-1])], np.min(test_error_bwd[::-1]))
 plt.xlabel('Number of features')
 plt.ylabel('Test RSS')
-plt.subplots(133)
-plt.scatter(list_n_features, test_error_bss, label='Best subset selection')
+plt.title('Backward stepwise selection')
+
+plt.subplot(133)
+plt.plot(list_n_features, test_error_bss, label='Best subset selection')
+plt.scatter(list_n_features[np.argmin(test_error_bss)], np.min(test_error_bss))
 plt.xlabel('Number of features')
 plt.ylabel('Test RSS')
+plt.title('Best subset selection')
+
 plt.show()
