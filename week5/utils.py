@@ -1,5 +1,7 @@
 import numpy as np
 from itertools import combinations
+import sklearn.model_selection as model_selection
+from sklearn.metrics import mean_squared_error as mse
 
 def compute_RSS(orig, pred):
     return np.sum((orig-pred)**2)
@@ -308,3 +310,28 @@ def backward_selection_with_score(model, n_features, features, targets, score='C
 
 
     return best_model, best_model_features, min_score
+
+def k_fold_cross_valid(n_splits, list_alphas, model, features, targets):
+    kf = model_selection.KFold(n_splits=n_splits, shuffle=True, random_state=1)
+    err_k = np.zeros([len(list_alphas), n_splits])
+    it = 0
+    for train, test in kf.split(features.T):
+        # Split the data i ntraining and test set
+        features_train = features[:, train]
+        features_test = features[:, test]
+        targets_train = targets[train]
+        targets_test = targets[test]
+        for i, alpha in enumerate(list_alphas):
+            # Set the value of alpha
+            model.set_params(alpha=alpha)
+
+            # Fit the lasso and ridge models on the training set
+            model.fit(features_train.T, targets_train)
+
+            # Predict the targets on the test set
+            predicted_targets = model.predict(features_test.T)
+
+            # Get the CV error on the test set
+            err_k[i, it] += mse(y_true=targets_test, y_pred=predicted_targets)
+        it += 1
+    return err_k
