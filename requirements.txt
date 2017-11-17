@@ -1,6 +1,6 @@
 # conda create -n statistical_learning python=3.6
-
+scipy
 numpy
 matplotlib
 scikit-learn
-csv
+jupyter
