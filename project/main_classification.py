@@ -3,7 +3,7 @@ import numpy as np
 import sklearn.discriminant_analysis as lda
 import sklearn.linear_model as lm
 from sklearn import preprocessing as preproc
-from sklearn import svm, tree, ensemble, neural_network
+from sklearn import svm, tree, ensemble, neural_network, mixture
 import sklearn.model_selection as model_selection
 import csv
 import project.utils as ut
@@ -19,8 +19,8 @@ header = voice[0,:]
 voice_no_header = voice[1:,:]
 
 # Remove dummy features (obvious linear combination of others)
-mask = np.zeros(voice_no_header.shape[1], dtype=bool)
-mask[[12, 20]] = True # dfrange=maxdom-mindom and IQR=Q75-Q25 and centroid = meanfreq
+mask = np.ones(voice_no_header.shape[1], dtype=bool)
+mask[[5, 11, 18]] = False # dfrange=maxdom-mindom and IQR=Q75-Q25 and centroid = meanfreq
 voice_no_header = voice_no_header[:,mask]
 header = header[mask]
 
