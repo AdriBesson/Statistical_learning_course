@@ -96,6 +96,16 @@ The spectral flatness is rather similar to the spectral entropy. It is measured 
 	F = N \frac{\sqrt[N]{\prod\limits_{i=1}^{N} y_i}}{\sum \limits_{i=1}^{N} y_i}.
 \end{equation}
 In case of a white noise, the spectrum is flat and $H=1$. In case of a pure tone, the geometrical mean is equal to zero and $H=0$.
+
+\section{Cleaning the dataset}
+\label{sec_cleaning_dataset}
+From the description of the features given in Section~\ref{sec:feat_desc}, a first cleaning of the dataset may be achieved before starting the analysis.
+Indeed, several features are exactly the same of collinear:
+\begin{itemize}
+	\item The features 'meanfreq' and 'centroid' are exactly similar. So 'centroid' has been removed;
+	\item The following relationship holds: $ 'IQR' = 'Q75' - 'Q25'$. 'IQR' has been removed.
+	\item The following relationship holds: $ 'dfrange' = 'maxdom' - 'mindom'$. 'dfrange' has been removed.
+\end{itemize}
 %\chapter{Another chapter with the same figures etc.}
 %\label{chap:examples_more}
 %
