@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signal Processing Laboratory (LTS5) - EPFL      %
+% LaTeX student report template                   %
+% Authors:                                        %
+%   D. Perdios – dimitris.perdios@epfl.ch         %
+%   A. Besson – adrien.besson@epfl.ch             %
+% v0.1 - 22.12.16                                 %
+% Typeset configuration: pdfLaTeX + Biber         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% DOCUMENT CLASS
+%\documentclass[10pt,a4paper,twoside,openright]{lts5student}
+\documentclass[10pt,a4paper,oneside]{lts5student}
+
+%%% PACKAGES DECLARATION
+\input{settings/package_declaration_settings}
+\input{settings/own_package_settings}
+
+%%% TITLE & AUTHORS SETTINGS
+\title{Gender recognition by voice}
+\author{Besson Adrien}
+\authortwo{Hippolyte Lefebvre}
+\authorthree{Greg}
+\supervisor{Dr. Emeric Thibaud}
+%\supervisor[Prof.]{Jean-Philippe Thiran}% \supervisor is required
+%\supervisortwo[Dr.]{Marcel Arditi}% \supervisortwo is optional
+%\assistant{Forename Surename}% \assistant is required
+%\assistanttwo[Dr.]{Forename Surename}% \assistanttwo is optional
+%\projecttype{Master's thesis}
+\projecttype{Project}
+\date{\today}
+
+%%% BIBLIOGRAPHY
+% 	Settings
+\input{settings/bibliography_settings}
+
+% 	Bibliography resources
+\addbibresource{resources/project_bib} % Input bibliography file
+
+%%% HEADERS SETTINGS
+\pagestyle{headings}
+
+%%% NEWCOMMANDS
+\input{settings/newcommands}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% HEAD: Title, ToC, ToF, ...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{content/head.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% MAIN: The chapters of the thesis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{content/chap1.tex}
+\input{content/chap2.tex}
+\input{content/chap_blind_doc.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% TAIL: Appendix, references
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\input{content/app1.tex}
+\input{content/biblio.tex}
+
+\end{document}

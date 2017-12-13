@@ -1,0 +1,262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signal Processing Laboratory (LTS5) - EPFL      %
+% LaTeX student report template                   %
+% Authors:                                        %
+%   D. Perdios – dimitris.perdios@epfl.ch         %
+%   A. Besson – adrien.besson@epfl.ch             %
+% v0.1 - 22.12.16                                 %
+% Typeset configuration: pdfLaTeX + Biber         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Objective of the project}
+\label{chap:obj_project}
+
+
+%\section{Some figures with a long description which spans multiple lines to see the typesetting of a section}
+%\label{sec:figures}
+%\mylipsum[3-5]
+%
+%\subsection{A central figure}
+%\label{subsec:central_figure}
+%\mylipsum[6]
+%The reference of a figure should be done in the text. Figure~\ref{fig:central_figure} shows that nothing is impossible. Also it is possible to include a figure without starting a new paragraph.
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[width=\textwidth]{sim_input_exp_measurements_wb_pc_pfld.pdf}
+%	\caption[A fullwidth central figure (short caption).]{A fullwidth central figure with a long caption which is unlikely in the list of figures. Therefore one should use the option argument of caption to define a short caption version}
+%	\label{fig:central_figure}
+%\end{figure}
+%To do so, one should not have any line break around the begin figure and end figure commands. Otherwise it will automatically be interpreted as a new paragraph.
+%\mylipsum[7-8]
+%
+%\subsection{A figure with subfigures}
+%\label{subsec:subfigureA}
+%\mylipsum[6]
+%\begin{figure}[htp]
+%	% Global scale inside inside \begin{figure} and \end{figure} so it is erased after
+%	\newcommand{\SubFigScal}{0.35}
+%	% Compute lengths inside \begin{figure} and \end{figure} so they are erased after
+%	%	Width depending on the fixed scale
+%	\newlength{\TriSubFigWidthA}
+%	\settowidth{\TriSubFigWidthA}{\includegraphics[scale=\SubFigScal]{sim_input_ampl.pdf}}
+%	\newlength{\TriSubFigWidthB}
+%	\settowidth{\TriSubFigWidthB}{\includegraphics[scale=\SubFigScal]{sim_input_exp_measurements_wb_gf_pfld.pdf}}
+%	\newlength{\TriSubFigWidthC}
+%	\settowidth{\TriSubFigWidthC}{\includegraphics[scale=\SubFigScal]{sim_input_tdel.pdf}}
+%	\newlength{\TriSubFigWidthD}
+%	\settowidth{\TriSubFigWidthD}{\includegraphics[scale=\SubFigScal]{sim_input_exp_measurements_wb_pc_pfld.pdf}}
+%	
+%	\hfill% <- starting the horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[b]{\TriSubFigWidthA}
+%		\centering
+%		\includegraphics[width=\textwidth]{sim_input_ampl.pdf}
+%		\caption{}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[b]{\TriSubFigWidthB}
+%		\centering
+%		\includegraphics[width=\textwidth]{sim_input_exp_measurements_wb_gf_pfld.pdf}
+%		\caption{}
+%	\end{subfigure}%
+%	\hfill\null% <- ending the horizontal equi-spacing (the % is mandatory!) 
+%	
+%	\hfill% <- starting the horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[b]{\TriSubFigWidthC}
+%		\centering
+%		\includegraphics[width=\textwidth]{sim_input_tdel.pdf}
+%		\caption{}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[b]{\TriSubFigWidthD}
+%		\centering
+%		\includegraphics[width=\textwidth]{sim_input_exp_measurements_wb_pc_pfld.pdf}
+%		\caption{}
+%	\end{subfigure}%
+%	\hfill\null% <- ending the horizontal equi-spacing (the % is mandatory!) 
+%	\caption[A figure containing 4 different subfigures of different height and width.]{A figure containing 4 different subfigures of different height and width. (b) and (d) are, at the same scale, higher and wider than (a) and (d). Fixing the same scale, it is possible to compute their respective width in order to have them aligned (on the bottom).}
+%	\label{fig:subfigureA}
+%\end{figure}
+%\mylipsum[7]
+%
+%\subsection{Another figure with subfigures}
+%\label{subsec:subfigureB}
+%
+%\mylipsum[8-9]
+%The idea in Figure~\ref{fig:subfigureB} is to maximize the number of subfigures on the same line.
+%It is also possible to refer directly to a specific subfigure, for exemple, the figure~\ref{subfig:subfigureB_f} is the only one with the colorbar.
+%\begin{figure}[htb]
+%	% Compute lengths inside \begin{figure} and \end{figure} so they are erased after
+%	\newlength{\OccSubFigWidth} \setlength{\OccSubFigWidth}{0.15\textwidth}
+%	\newlength{\OccSubFigHeight}
+%	\settoheight{\OccSubFigHeight}{\includegraphics[width=\OccSubFigWidth]{figures/Simulation_UFSB_classic_1PW.pdf}}
+%	\newlength{\OccSubFigWidthCBar}
+%	\settowidth{\OccSubFigWidthCBar}{\includegraphics[height=\OccSubFigHeight]{figures/Simulation_Lu_sparse_1PW.pdf}}
+%
+%	\hfill% <- starting the horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_UFSB_classic_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_a}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_Garcia_classic_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_b}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_Lu_classic_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_c}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_UFSB_sparse_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_d}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_Garcia_sparse_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_e}
+%	\end{subfigure}%
+%	\hfill% <- horizontal equi-spacing (the % is mandatory!)
+%	\begin{subfigure}[c]{\OccSubFigWidthCBar}
+%		\centering
+%		\includegraphics[width=\textwidth]{figures/Simulation_Lu_sparse_1PW.pdf}
+%		\caption{}
+%		\label{subfig:subfigureB_f}
+%	\end{subfigure}%
+%	\hfill\null% <- ending the horizontal equi-spacing (the % is mandatory!) 
+%	\caption[A maximized subfigure]{A maximized subfigure with a lot of subfigure on the same line. Usually captions are not used in subfigures, they are defined in the global caption of the figure}
+%	\label{fig:subfigureB}
+%\end{figure}
+%\mylipsum[10]
+%
+%\section{Some tables}
+%\label{sec:tables}
+%\mylipsum[11-12]
+%
+%\begin{table}[htb]
+%\centering
+%\caption[A nice looking simple table with tabu and booktabs packages]{A nice looking simple table with tabu and booktabs packages. Usually it is better to put the table caption before the table itself.}
+%\begin{tabu}{lcccc}
+%\toprule
+%Sample & A & B & C & D \\
+%\midrule
+%S1 & 5 & 8 & 12 & 2 \\
+%S2 & 6 & 9 & 2 & 6 \\
+%S3 & 7 & 9 & 5 & 8 \\
+%S4 & 8 & 9 & 8 & 2 \\
+%\bottomrule
+%\end{tabu}
+%\end{table}
+%\mylipsum[13]
+%
+%\begin{table}[htb]
+%\centering
+%\caption[Same table with fixed length]{Same table with fixed length with adaptable column width.}
+%\begin{tabu} to 0.7\textwidth {X[2,L] X[1,C] X[1,C] X[1,C] X[1,C]}
+%\toprule
+%Sample & A & B & C & D \\
+%\midrule
+%S1 & 5 & 8 & 12 & 2 \\
+%S2 & 6 & 9 & 2 & 6 \\
+%S3 & 7 & 9 & 5 & 8 \\
+%S4 & 8 & 9 & 8 & 2 \\
+%\bottomrule
+%\end{tabu}
+%\end{table}
+%\mylipsum[14-15]
+%
+%\begin{table}[htb]
+%\centering
+%\caption[A nice looking table]{A nice looking table with tabu and booktabs packages.}
+%\begin{tabu}{rrrrcrrr}
+%\toprule
+%& \multicolumn{3}{c}{$w = 8$} & \phantom{abc}& \multicolumn{3}{c}{$w = 16$}\\ \cmidrule{2-4} \cmidrule{6-8}
+%& $t=0$ & $t=1$ & $t=2$ && $t=0$ & $t=1$ & $t=2$\\ \midrule
+%$\text{dir}=1$\\
+%$c_{\text{top,}0}$ & 0.0790 & 0.1692 & 0.2945 && 0.3670 & 0.7187 & 3.1815\\
+%$c_{\text{top,}1}$ & -0.8651& 50.0476& 5.9384&& -9.0714& 297.0923& 46.2143\\
+%$c_{\text{top,}2}$ & 124.2756& -50.9612& -14.2721&& 128.2265& -630.5455& -381.0930\\
+%$\text{dir}=0$\\
+%$c_{\text{top,}0}$ & 0.0357& 1.2473& 0.2119&& 0.3593& -0.2755& 2.1764\\
+%$c_{\text{top,}1}$ & -17.9048& -37.1111& 8.8591&& -30.7381& -9.5952& -3.0000\\
+%$c_{\text{top,}2}$ & 105.5518& 232.1160& -94.7351&& 100.2497& 141.2778& -259.7326\\ \bottomrule
+%\end{tabu}
+%\end{table}
+%\mylipsum[17]
+%
+%%TODO: error on the display of the cmidrule compared to the other
+%%TODO:spacing under \textiwdth tabu not the same
+%\begin{table}[htb]
+%\centering
+%\caption[Same complex table with fixed length]{A nice looking table with tabu and booktabs packages.}
+%\begin{tabu} to \textwidth {X[1,R]X[1,R]X[1,R]X[1,R]X[0.1,C]X[1,R]X[1,R]X[1,R]}
+%\toprule
+%& \multicolumn{3}{c}{$w = 8$} & \phantom{abc}& \multicolumn{3}{c}{$w = 16$}\\ %\cmidrule{2-4} \cmidrule{6-8}
+%& $t=0$ & $t=1$ & $t=2$ && $t=0$ & $t=1$ & $t=2$\\ \midrule
+%$\text{dir}=1$\\
+%$c_{\text{top,}0}$ & 0.0790 & 0.1692 & 0.2945 && 0.3670 & 0.7187 & 3.1815\\
+%$c_{\text{top,}1}$ & -0.8651& 50.0476& 5.9384&& -9.0714& 297.0923& 46.2143\\
+%$c_{\text{top,}2}$ & 124.2756& -50.9612& -14.2721&& 128.2265& -630.5455& -381.0930\\
+%$\text{dir}=0$\\
+%$c_{\text{top,}0}$ & 0.0357& 1.2473& 0.2119&& 0.3593& -0.2755& 2.1764\\
+%$c_{\text{top,}1}$ & -17.9048& -37.1111& 8.8591&& -30.7381& -9.5952& -3.0000\\
+%$c_{\text{top,}2}$ & 105.5518& 232.1160& -94.7351&& 100.2497& 141.2778& -259.7326\\ \bottomrule
+%\end{tabu}
+%\end{table}
+%\mylipsum[19]
+%
+%\section{Some algorithms}
+%\label{sec:algorithms}
+%\begin{algorithm}
+%\caption{A simple algorithm}
+%\begin{algorithmic}
+%\If {$i\geq maxval$}
+%    \State $i\gets 0$
+%\Else
+%    \If {$i+k\leq maxval$}
+%        \State $i\gets i+k$
+%    \EndIf
+%\EndIf
+%\end{algorithmic}
+%\end{algorithm}
+%
+%\begin{algorithm}
+%\caption{Euclid’s algorithm}\label{euclid}
+%\begin{algorithmic}[1]
+%\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+%   \State $r\gets a\bmod b$
+%   \While{$r\not=0$}\Comment{We have the answer if r is 0}
+%      \State $a\gets b$
+%      \State $b\gets r$
+%      \State $r\gets a\bmod b$
+%   \EndWhile\label{euclidendwhile}
+%   \State \textbf{return} $b$\Comment{The gcd is b}
+%\EndProcedure
+%\end{algorithmic}
+%\end{algorithm}
+%
+%\section{Some references calls}
+%\label{sec:references_calls}
+%Cite a specific article~\cite{Besson_EUSIPCO_2016}.
+%Cite multiple articles~\cite{Besson_EUSIPCO_2016,Besson_ICIP_2016,Carrillo_SPL_2013}. This one is a book~\cite{Morse_1968}.
+%You can also cite the authors~\citeauthor{Besson_ICIP_2016} and relate to the article~\cite{Besson_ICIP_2016}.
+%A citation with a doi (journal) and arxiv~\cite{Chernyakova_UFFC_2014} so the arxiv is not printed.
+%Only arxiv~\cite{Yankelevsky_ARXIV_2016}.
+%With acronyms~\cite{Paik_OE_2007} and more complicated ones~\cite{Schor_CASES_2014,Schor_ESTIM_2013}.
+%Some other references to span multiple pages~\cite{IEEEexample:incollection,IEEEexample:incollectionwithseries,IEEEexample:incollectionmanyauthors,IEEEexample:jppat,IEEEexample:uspat,IEEEexample:electronhowinfo2,IEEEexample:confwithpaper,IEEEexample:techreptype,IEEEexample:book,IEEEexample:bookwithseriesvolume,IEEEexample:bookwitheditor,IEEEexample:inbookpagesnote,IEEEexample:masters,IEEEexample:frenchpatreq,IEEEexample:motmanual}.
+%A last exemple with a huge amount of authors~\cite{Waterston_NATURE_2002} and the author citation~\citeauthor{Waterston_NATURE_2002}.
+%
+%
+%

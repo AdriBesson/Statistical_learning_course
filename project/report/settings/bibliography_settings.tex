@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signal Processing Laboratory (LTS5) - EPFL      %
+% LaTeX student report template                   %
+% Authors:                                        %
+%   D. Perdios – dimitris.perdios@epfl.ch         %
+%   A. Besson – adrien.besson@epfl.ch             %
+% v0.1 - 22.12.16                                 %
+% Typeset configuration: pdfLaTeX + Biber         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Known problems with biblatex-ieee style
+% 1) still problems with arXiv (eprint) having a primaryClass (eprintclass) entry. The output is ok, i.e. arXiv: <eprint> [<primaryClass>], but the href is not correct and does not include the <primaryClass>. For exemple it would link to http://arxiv.org/abs/407151 instead of http://arxiv.org/abs/astro-ph/407151 (<arxiv>=40751, <primaryClass>=astro-ph).
+%	Maybe a problem due to Mendeley export which should export <arxiv>=40751/astro-ph without any <primaryClass> field
+% 2) if more than one url is given it seems not to be a list an adds %20 (space char) between each links...
+
+%% LOAD OPTIONS
+% 	Remark 1: backend, style, bibstyle and citestyle options as well natbib and mcite compatibility options must be set at loading time in the square brackets
+%	Remark 2: \ExecuteBibliographyOptions[<entrytype, ...>]{<key=value, ...>} 
+%	Remark 3: seems better than clearfield since it doesn't clear the field, just doesn't print
+%\ExecuteBibliographyOptions{citestyle=numeric-comp} % nicer than the ieee citestyle
+%\ExecuteBibliographyOptions{sorting=none} % sorting=none already defined by ieee
+\ExecuteBibliographyOptions{mincitenames=3} % if more than maxcitename, truncates to mincitename
+\ExecuteBibliographyOptions{maxcitenames=3} % if more than maxcitename, truncates to mincitename
+\ExecuteBibliographyOptions{minbibnames=6} % if more than maxbibname, truncates to minbibname
+\ExecuteBibliographyOptions{maxbibnames=6} % if more than maxbibname, truncates to minbibname
+%\ExecuteBibliographyOptions{isbn=false}
+%\ExecuteBibliographyOptions{doi=false}
+%\ExecuteBibliographyOptions{eprint=false}
+%\ExecuteBibliographyOptions{url=false} % does not affect @online since url is mandatory 
+%\ExecuteBibliographyOptions{firstinits=true} % already defined by ieee bibstyle
+%\ExecuteBibliographyOptions{date=year}
+
+%% SOME BASIC CUSTOMIZATIONs
+% 	Bilbiography font size
+%\renewcommand*{\bibfont}{\small}
+
+% 	Bibliography item separation
+%\setlength\bibitemsep{0pt}		% No separation between bib entries
+
+% 	Bibliography name
+%TODO: change bibliography name in the .cls file by using \refname instead of \bibname for the chapter name
+
+% At every bibitem
+%TODO: how not to print an entry without clearing it
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+% 	\clearlist{address}
+%	\clearfield{abstract}
+%	\clearfield{title}
+%	\clearname{author}
+% 	\clearfield{date}
+ 	\clearfield{doi}
+% 	\clearfield{eprint}
+ 	\clearfield{isbn}
+ 	\clearfield{issn}
+ 	\clearfield{isrn}
+% 	\clearlist{location}
+ 	\clearfield{month}
+ 	\clearfield{number}
+%	\clearfield{note}
+%	\clearfield{url}
+%	\clearfield{issue}
+ 	\clearfield{series}
+% 	\clearname{editor}
+ 	
+ 	% Remove arXiv (eprint) for @article if journaltitle (which is converted from .bib journal entry) exists
+ 	\ifentrytype{article}
+ 		{
+ 			\iffieldundef{journaltitle}
+ 				{}
+ 				{\clearfield{eprint}}
+ 		}
+ 		{}
+ 	% Remove arXiv (eprint) for @inproceedings if booktitle exists
+	\ifentrytype{inproceedings}
+ 		{
+ 			\iffieldundef{booktitle}
+ 				{}
+ 				{\clearfield{eprint}}
+ 		}
+ 		{}
+	% Remove publisher, location and editor except for @book
+ 	\ifentrytype{book}
+ 		{}
+ 		{
+  			\clearlist{publisher}
+  			\clearlist{location}
+  			\clearname{editor}
+		}
+	% Remove url except for @online (similar to using url=false package option)
+	\ifentrytype{online}
+ 		{}
+ 		{\clearfield{url}}
+}
+
+% At every citekey
+%TODO: check \AtEveryCitekey
+%\AtEveryCitekey{
+%	\clearfield{month}
+%}
+
+% Preserve acronyms in titles which are lowcased by ieee style
+%	Remark 1: the expression \b\w*[A-Z]{2,}\w*\b finds a word containing at least 2 capital letters
+%	Remark 2: (expr) group elements of the expression and capture tokens
+%	Remark 3: replace expr wrapping it in curly braces (don't know why the empty group is needed, see http://tex.stackexchange.com/questions/238078/biblatex-preserve-case-of-acronyms-in-title)
+%	Remark 4: changing [A-Z]{2,} to [A-Z]{1,} would preserve the uppercase of every words
+%TODO: check with 2016 version of TeX and new versions of biblatex-ieee yet freezed
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldsource=title, match=\regexp{(\b\w*[A-Z]{2,}\w*\b)}, replace={{}{$1}}]
+		}
+	}
+}
+
+% More intelligent initials, for exemple, Ph. for Philippe rather than P. (see: http://tex.stackexchange.com/questions/295476/two-or-three-letter-initials-in-bibliography-with-biblatex)
+\DeclareStyleSourcemap{%
+	\maps[datatype=bibtex]{%
+	\map{%
+		% Author field
+		\step[fieldsource=author,%
+			match={\regexp{\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))(\S*,)}},%
+			replace={\regexp{\{$1\}$3}}]% Protect last names (first last)
+		\step[fieldsource=author,%
+			match={\regexp{([^,]\s)\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))}},%
+			replace={\regexp{$1\{$2\}}}]% Protect last names (last, first)
+		\step[fieldsource=author,%
+			match={\regexp{\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))([^\}])}},%
+			replace={\regexp{\{\\relax\{\}$1\}$3}}]% Insert \relax after abbreviating
+		% Editor field
+		\step[fieldsource=editor,%
+			match={\regexp{\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))(\S*,)}},%
+			replace={\regexp{\{$1\}$3}}]% Protect last names (first last)
+		\step[fieldsource=editor,%
+			match={\regexp{([^,]\s)\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))}},%
+			replace={\regexp{$1\{$2\}}}]% Protect last names (last, first)
+		\step[fieldsource=editor,%
+			match={\regexp{\b(Chr|Ch|Th|Ph|[B-DF-HJ-NP-TV-XZ](l|r))([^\}])}},%
+			replace={\regexp{\{\\relax\{\}$1\}$3}}]% Insert \relax after abbreviating
+}}}%
+
+
+% Typeset only the first page with p. instead of pp. for any entry
+%\DeclareFieldFormat{pages}{\mkfirstpage[{\mkpageprefix[bookpagination]}]{#1}}
+
+% Make volume typset bold
+%\DeclareFieldFormat[article,periodical]{volume}{\mkbibbold{#1}}
+
+% Removing the in
+% 		for every entries
+%\renewbibmacro{in:}{}
+%% 		only for articles
+%\renewbibmacro{in:}{%
+%  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}

@@ -1,0 +1,39 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{List of Figures}{2}{section*.3}
+\contentsline {chapter}{List of Tables}{3}{section*.5}
+\contentsline {chapter}{\numberline {1}Objective of the project}{4}{chapter.1}
+\contentsline {chapter}{\numberline {2}The dataset}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}General considerations}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Description of the features}{6}{section.2.2}
+\contentsline {paragraph}{Frequency-related features}{6}{paragraph*.8}
+\contentsline {paragraph}{Skewness of the spectrum}{6}{paragraph*.9}
+\contentsline {paragraph}{Kurtosis}{6}{paragraph*.10}
+\contentsline {paragraph}{Shannon spectral entropy}{7}{paragraph*.11}
+\contentsline {paragraph}{Spectral flatness}{7}{paragraph*.12}
+\contentsline {chapter}{\numberline {3}Heading on Level\xspace 0 (chapter)}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Heading on Level\xspace 1 (section)}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Heading on Level\xspace 2 (subsection)}{9}{subsection.3.1.1}
+\contentsline {subsubsection}{Heading on Level\xspace 3 (subsection)}{10}{subsubsection*.13}
+\contentsline {paragraph}{Heading on Level\xspace 4 (paragraph)}{11}{paragraph*.14}
+\contentsline {section}{\numberline {3.2}Lists}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Example for list\xspace (itemize)}{11}{subsection.3.2.1}
+\contentsline {subsubsection}{Example for list\xspace (4*itemize)}{12}{subsubsection*.15}
+\contentsline {subsection}{\numberline {3.2.2}Example for list\xspace (enumerate)}{14}{subsection.3.2.2}
+\contentsline {subsubsection}{Example for list\xspace (4*enumerate)}{15}{subsubsection*.16}
+\contentsline {subsection}{\numberline {3.2.3}Example for list\xspace (description)}{16}{subsection.3.2.3}
+\contentsline {subsubsection}{Example for list\xspace (4*description)}{17}{subsubsection*.17}
+\contentsline {section}{\numberline {3.3}Some blind text with math formulas}{19}{section.3.3}
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{21}{appendix.A}
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{21}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{21}{subsection.A.1.1}
+\contentsline {subsubsection}{Heading on Level\xspace 3 (subsubsection)}{21}{subsubsection*.18}
+\contentsline {paragraph}{Heading on Level\xspace 4 (paragraph)}{21}{paragraph*.19}
+\contentsline {section}{\numberline {A.2}Lists}{22}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{22}{subsection.A.2.1}
+\contentsline {subsubsection}{Example for list\xspace (4*itemize)}{22}{subsubsection*.20}
+\contentsline {subsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{22}{subsection.A.2.2}
+\contentsline {subsubsection}{Example for list\xspace (4*enumerate)}{22}{subsubsection*.21}
+\contentsline {subsection}{\numberline {A.2.3}Example for list\xspace (description)}{23}{subsection.A.2.3}
+\contentsline {subsubsection}{Example for list\xspace (4*description)}{23}{subsubsection*.22}
