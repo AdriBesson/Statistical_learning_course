@@ -39,9 +39,9 @@ features_train, features_test, labels_train, labels_test = model_selection.train
 
 # Forward stepwise selection
 list_n_features = np.arange(1, header.shape[0]-1)
-#model = lda.LinearDiscriminantAnalysis()
+model = lda.LinearDiscriminantAnalysis()
 #model = lda.QuadraticDiscriminantAnalysis()
-model = ensemble.GradientBoostingClassifier(random_state=10)
+#model = ensemble.GradientBoostingClassifier(random_state=10)
 #model = ensemble.AdaBoostClassifier(random_state=10)
 test_error_fwd = []
 best_score_test = 0

@@ -23,7 +23,12 @@
 %\usepackage{setspace}
 %	\onehalfspacing % 1.5 linespaceing (already in CLS)
 %\usepackage{fancyhdr} % pro­vides ex­ten­sive fa­cil­i­ties, both for con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
-\usepackage{siunitx} % SI units system typset
+\usepackage{siunitx}
+\sisetup{
+	group-digits = integer, % only group digits (by three) for integers (not decimals)
+	binary-units = true, % load binary units
+	detect-all
+} % SI units system typset
 %\usepackage{enumitem}
 %	\setlist[enumerate]{label*=\arabic*.,topsep=5pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
 %	\setlist[itemize]{topsep=5pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
@@ -47,7 +52,7 @@
 \usepackage[labelfont=rm, labelformat=parens, labelsep=space, skip=0pt]{subcaption} % defined in CLS
 
 % Tables
-%\usepackage{multirow}
+\usepackage{multirow}
 \usepackage{longtable} % use \linebreak instead of \\ in headers to avoid a bug with longtables (or longtabu) across two pages
 \usepackage{booktabs} % the pack­age en­hances the qual­ity of ta­bles (toprule, bottomrule, etc.)
 \usepackage{tabu}

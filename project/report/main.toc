@@ -13,28 +13,21 @@
 \contentsline {paragraph}{Shannon spectral entropy}{7}{paragraph*.11}
 \contentsline {paragraph}{Spectral flatness}{7}{paragraph*.12}
 \contentsline {section}{\numberline {2.3}Cleaning the dataset}{7}{section.2.3}
-\contentsline {chapter}{\numberline {3}Heading on Level\xspace 0 (chapter)}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Heading on Level\xspace 1 (section)}{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Heading on Level\xspace 2 (subsection)}{9}{subsection.3.1.1}
-\contentsline {subsubsection}{Heading on Level\xspace 3 (subsection)}{10}{subsubsection*.13}
-\contentsline {paragraph}{Heading on Level\xspace 4 (paragraph)}{11}{paragraph*.14}
-\contentsline {section}{\numberline {3.2}Lists}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Example for list\xspace (itemize)}{11}{subsection.3.2.1}
-\contentsline {subsubsection}{Example for list\xspace (4*itemize)}{12}{subsubsection*.15}
-\contentsline {subsection}{\numberline {3.2.2}Example for list\xspace (enumerate)}{14}{subsection.3.2.2}
-\contentsline {subsubsection}{Example for list\xspace (4*enumerate)}{15}{subsubsection*.16}
-\contentsline {subsection}{\numberline {3.2.3}Example for list\xspace (description)}{16}{subsection.3.2.3}
-\contentsline {subsubsection}{Example for list\xspace (4*description)}{17}{subsubsection*.17}
-\contentsline {section}{\numberline {3.3}Some blind text with math formulas}{19}{section.3.3}
-\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{21}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{21}{subsection.A.1.1}
-\contentsline {subsubsection}{Heading on Level\xspace 3 (subsubsection)}{21}{subsubsection*.18}
-\contentsline {paragraph}{Heading on Level\xspace 4 (paragraph)}{21}{paragraph*.19}
-\contentsline {section}{\numberline {A.2}Lists}{22}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{22}{subsection.A.2.1}
-\contentsline {subsubsection}{Example for list\xspace (4*itemize)}{22}{subsubsection*.20}
-\contentsline {subsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{22}{subsection.A.2.2}
-\contentsline {subsubsection}{Example for list\xspace (4*enumerate)}{22}{subsubsection*.21}
-\contentsline {subsection}{\numberline {A.2.3}Example for list\xspace (description)}{23}{subsection.A.2.3}
-\contentsline {subsubsection}{Example for list\xspace (4*description)}{23}{subsubsection*.22}
+\contentsline {chapter}{\numberline {3}Data exploration}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Evaluation of the best classification method}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Considered classification methods}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}The naive strategy}{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Description}{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Results}{9}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{10}{appendix.A}
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{10}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{10}{subsection.A.1.1}
+\contentsline {subsubsection}{Heading on Level\xspace 3 (subsubsection)}{10}{subsubsection*.14}
+\contentsline {paragraph}{Heading on Level\xspace 4 (paragraph)}{10}{paragraph*.15}
+\contentsline {section}{\numberline {A.2}Lists}{11}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{11}{subsection.A.2.1}
+\contentsline {subsubsection}{Example for list\xspace (4*itemize)}{11}{subsubsection*.16}
+\contentsline {subsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{11}{subsection.A.2.2}
+\contentsline {subsubsection}{Example for list\xspace (4*enumerate)}{11}{subsubsection*.17}
+\contentsline {subsection}{\numberline {A.2.3}Example for list\xspace (description)}{12}{subsection.A.2.3}
+\contentsline {subsubsection}{Example for list\xspace (4*description)}{12}{subsubsection*.18}
