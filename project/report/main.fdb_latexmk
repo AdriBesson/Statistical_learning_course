@@ -1,6 +1,7 @@
 # Fdb version 3
-["biber main"] 1513174057 "main.bcf" "main.bbl" "main" 1513174077
-  "main.bcf" 1513174058 95136 8c30a86eff17b0137313f1c5938fa5cd ""
+["biber main"] 1513348944 "main.bcf" "main.bbl" "main" 1513348944
+  "main.bcf" 1513348942 97280 2ce0bb9822a3956dbcd342e8b4301fa2 ""
+  "resources/project_bib" 0 -1 0 ""
   (generated)
   "main.blg"
   "main.bbl"
@@ -262,12 +263,12 @@
   "settings/own_package_settings.tex" 1513158258 511 0c4ca6d53b9f960ce81f1f7a3389794c ""
   "settings/package_declaration_settings.tex" 1513158258 5449 8313caf50472031a5d8c8569626a99c1 ""
   (generated)
-  "main.loa"
-  "main.bcf"
-  "main.toc"
   "main.aux"
-  "main.run.xml"
-  "main.lof"
-  "main.lot"
-  "main.log"
   "main.pdf"
+  "main.bcf"
+  "main.lof"
+  "main.toc"
+  "main.log"
+  "main.loa"
+  "main.run.xml"
+  "main.lot"
