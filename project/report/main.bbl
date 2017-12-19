@@ -1,0 +1,653 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{Wu_JASA_1991}{article}{}
+      \name{author}{2}{}{%
+        {{hash=feb738a8c05b4adbcef8c7e5dd050d40}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=582e1f17c2bfd86215e96cf232b90814}{%
+           family={{Ch}ilders},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{396941ac6d9ffa7b750cc66298cb298a}
+      \strng{fullhash}{396941ac6d9ffa7b750cc66298cb298a}
+      \strng{authornamehash}{396941ac6d9ffa7b750cc66298cb298a}
+      \strng{authorfullhash}{396941ac6d9ffa7b750cc66298cb298a}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Acoust. Soc. Am.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{{Gender recognition from speech. Part I: Coarse analysis}}
+      \field{volume}{90}
+      \field{year}{1991}
+      \field{pages}{1828\bibrangedash 1840}
+      \range{pages}{13}
+    \endentry
+    \entry{Wu_JASA_1991_2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=582e1f17c2bfd86215e96cf232b90814}{%
+           family={{Ch}ilders},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=feb738a8c05b4adbcef8c7e5dd050d40}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{5380c36a7d8ac79e874fdcff4f001f53}
+      \strng{fullhash}{5380c36a7d8ac79e874fdcff4f001f53}
+      \strng{authornamehash}{5380c36a7d8ac79e874fdcff4f001f53}
+      \strng{authorfullhash}{5380c36a7d8ac79e874fdcff4f001f53}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Acoust. Soc. Am.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{{Gender recognition from speech. Part {}{II}: Fine analysis}}
+      \field{volume}{90}
+      \field{year}{1991}
+      \field{pages}{1841\bibrangedash 1856}
+      \range{pages}{16}
+    \endentry
+    \entry{Childers_ICASSP_1988}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ccf4ba2f790496973dbf74b68d18f937}{%
+           family={{Ch}ilders},
+           familyi={C\bibinitperiod},
+           given={D.G.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1f579da957a19dbe08da3c180bd34043}{%
+           family={{Ke Wu}},
+           familyi={K\bibinitperiod}}}%
+        {{hash=605ea6dea28efb17d9282fb836b0f82c}{%
+           family={Bae},
+           familyi={B\bibinitperiod},
+           given={K.S.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d014b8718fde0cafd867ba258e1044ed}{%
+           family={Hicks},
+           familyi={H\bibinitperiod},
+           given={D.M.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8675ff53f52f550b6cfb2c68f2854587}
+      \strng{fullhash}{bbbc4ad240a8809491d5e274f32cf093}
+      \strng{authornamehash}{8675ff53f52f550b6cfb2c68f2854587}
+      \strng{authorfullhash}{bbbc4ad240a8809491d5e274f32cf093}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICASSP, IEEE Int. Conf. Acoust. Speech Signal Process. - Proc.}
+      \field{title}{{Automatic recognition of gender by voice}}
+      \field{year}{1988}
+      \field{pages}{603\bibrangedash 606}
+      \range{pages}{4}
+    \endentry
+    \entry{Harb2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a5fe12b9d6cdd0f2bc7d3c9904cde49}{%
+           family={Harb},
+           familyi={H\bibinitperiod},
+           given={Hadi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=20116fd99e902e66b3a5a658cc3aab24}{%
+           family={{Ch}en},
+           familyi={C\bibinitperiod},
+           given={Liming},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{158778eeabe7ef42970d454c6230a00c}
+      \strng{fullhash}{158778eeabe7ef42970d454c6230a00c}
+      \strng{authornamehash}{158778eeabe7ef42970d454c6230a00c}
+      \strng{authorfullhash}{158778eeabe7ef42970d454c6230a00c}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Intell. Inf. Syst.}
+      \field{month}{3}
+      \field{number}{2-3}
+      \field{title}{{Voice-Based Gender Identification in Multimedia Applications}}
+      \field{volume}{24}
+      \field{year}{2005}
+      \field{pages}{179\bibrangedash 198}
+      \range{pages}{20}
+    \endentry
+    \entry{Zeng2006}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=27a8c09821594e7912ed1d6aa2874ee4}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Yu-min},
+           giveni={Y\bibinithyphendelim m\bibinitperiod}}}%
+        {{hash=c5dc266b21c25641ecdf73f5c74a45ab}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhen-yang},
+           giveni={Z\bibinithyphendelim y\bibinitperiod}}}%
+        {{hash=e7692a57718873beec65a01032783fa1}{%
+           family={Falk},
+           familyi={F\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=410c3a3e3e5ee9d3471596b640e3dc19}{%
+           family={{Ch}an},
+           familyi={C\bibinitperiod},
+           given={Wai-yip},
+           giveni={W\bibinithyphendelim y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6c1bc2d9f6fb2e2f2ae4e5e9292b0be}
+      \strng{fullhash}{7a1a6c37c7c933b29c2ca6e3a8daa861}
+      \strng{authornamehash}{a6c1bc2d9f6fb2e2f2ae4e5e9292b0be}
+      \strng{authorfullhash}{7a1a6c37c7c933b29c2ca6e3a8daa861}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2006 Int. Conf. Mach. Learn. Cybern.}
+      \field{title}{{Robust {}{GMM} Based Gender Classification using Pitch and {}{RASTA}-{}{PLP} Parameters of Speech}}
+      \field{year}{2006}
+      \field{pages}{3376\bibrangedash 3379}
+      \range{pages}{4}
+    \endentry
+    \entry{Sorokin2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9174c8eb19aa38be938d9179323afb7f}{%
+           family={Sorokin},
+           familyi={S\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=fc9e05655a863b1b96cd30075ec3e1d7}{%
+           family={Makarov},
+           familyi={M\bibinitperiod},
+           given={I.\bibnamedelimi S.},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d910de73e45213c74e39015d67daef0}
+      \strng{fullhash}{3d910de73e45213c74e39015d67daef0}
+      \strng{authornamehash}{3d910de73e45213c74e39015d67daef0}
+      \strng{authorfullhash}{3d910de73e45213c74e39015d67daef0}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acoust. Phys.}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{{Gender recognition from vocal source}}
+      \field{volume}{54}
+      \field{year}{2008}
+      \field{pages}{571\bibrangedash 578}
+      \range{pages}{8}
+    \endentry
+    \entry{Metze_ICASSP_2007}{inproceedings}{}
+      \name{author}{11}{}{%
+        {{hash=704ab8b4131e1f483a5b51fcd07b225d}{%
+           family={Metze},
+           familyi={M\bibinitperiod},
+           given={{\relax{}Fl}orian},
+           giveni={{\relax{}Fl}\bibinitperiod}}}%
+        {{hash=6341f01aa6d92de4778fb8d77154653c}{%
+           family={Ajmera},
+           familyi={A\bibinitperiod},
+           given={Jitendra},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90dd9631b512bb8925e01d12175aff6f}{%
+           family={Englert},
+           familyi={E\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bd0daf653d749484a821b211093098bd}{%
+           family={Bub},
+           familyi={B\bibinitperiod},
+           given={Udo},
+           giveni={U\bibinitperiod}}}%
+        {{hash=8786d2bdf5b0bc10d8bb1a68312ca4b1}{%
+           family={Burkhardt},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4040be64a6eb99d8f825944ee6daa347}{%
+           family={Stegmann},
+           familyi={S\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0b977ffe116a564aeffb321a1dff1008}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={{\relax{}Chr}istian},
+           giveni={{\relax{}Chr}\bibinitperiod}}}%
+        {{hash=d299cf39f85577e50e50e27adf3a2fb9}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e101ef362ad39c03054ca124731bc9f7}{%
+           family={Andrassy},
+           familyi={A\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dee098a3be0be230de16ea8ebe8eb578}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Josef\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=205ca73209f8470f737e4ebada870602}{%
+           family={Littel},
+           familyi={L\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fdad7a48457ed310b7520e04862a4863}
+      \strng{fullhash}{15e2ed9d6f12b5b9350e81d72159159f}
+      \strng{authornamehash}{fdad7a48457ed310b7520e04862a4863}
+      \strng{authorfullhash}{15e2ed9d6f12b5b9350e81d72159159f}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2007 IEEE Int. Conf. Acoust. Speech Signal Process.}
+      \field{title}{{Comparison of Four Approaches to Age and Gender Recognition for Telephone Applications}}
+      \field{year}{2007}
+      \field{pages}{1089\bibrangedash 1092}
+      \range{pages}{4}
+    \endentry
+    \entry{Bocklet_ICASSP_2008}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=ce87fa86b1323a47312c2fd95e6aba58}{%
+           family={Bocklet},
+           familyi={B\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=462bec118e0475bc2b76640102589b78}{%
+           family={Maier},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dee098a3be0be230de16ea8ebe8eb578}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Josef\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=8786d2bdf5b0bc10d8bb1a68312ca4b1}{%
+           family={Burkhardt},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a3c8708b63ce092b1465ab6d68b4b877}{%
+           family={Noth},
+           familyi={N\bibinitperiod},
+           given={Elmar},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5743adcff7ea6c1b04ea9405b7b4cba}
+      \strng{fullhash}{06677cbff279762298d63beea37463fb}
+      \strng{authornamehash}{f5743adcff7ea6c1b04ea9405b7b4cba}
+      \strng{authorfullhash}{06677cbff279762298d63beea37463fb}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 IEEE Int. Conf. Acoust. Speech Signal Process.}
+      \field{month}{3}
+      \field{title}{{Age and gender recognition for telephone applications based on {}{GMM} supervectors and support vector machines}}
+      \field{year}{2008}
+      \field{pages}{1605\bibrangedash 1608}
+      \range{pages}{4}
+    \endentry
+    \entry{Levi2015}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0faa4c03c6584d1c1616ec34abacbc86}{%
+           family={Levi},
+           familyi={L\bibinitperiod},
+           given={Gil},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0020e4bde099a6c3774736366cd56f2e}{%
+           family={Hassncer},
+           familyi={H\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ad832b0226fd9854005fb86e338e2b9}
+      \strng{fullhash}{0ad832b0226fd9854005fb86e338e2b9}
+      \strng{authornamehash}{0ad832b0226fd9854005fb86e338e2b9}
+      \strng{authorfullhash}{0ad832b0226fd9854005fb86e338e2b9}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 IEEE Conf. Comput. Vis. Pattern Recognit. Work.}
+      \field{month}{6}
+      \field{title}{{Age and gender classification using convolutional neural networks}}
+      \field{year}{2015}
+      \field{pages}{34\bibrangedash 42}
+      \range{pages}{9}
+    \endentry
+    \entry{Bisio2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9b0326b9f4878b957ba50aaf2d626cca}{%
+           family={Bisio},
+           familyi={B\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b5383843e707c9884bbd3e9c109bf799}{%
+           family={Delfino},
+           familyi={D\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e6d523d0842fe9015492d0019a220af9}{%
+           family={Lavagetto},
+           familyi={L\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=98239962a736d76db76080ef98efb705}{%
+           family={Marchese},
+           familyi={M\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=46d2c7b7ab86ea6ad2d76861d760f7e3}{%
+           family={Sciarrone},
+           familyi={S\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0e7769f9057dbec21e265c1b870bc35}
+      \strng{fullhash}{0036cc229abfad35207e095dec9279c8}
+      \strng{authornamehash}{b0e7769f9057dbec21e265c1b870bc35}
+      \strng{authorfullhash}{0036cc229abfad35207e095dec9279c8}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2168-6750}
+      \field{journaltitle}{IEEE Trans. Emerg. Top. Comput.}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{{Gender-Driven Emotion Recognition Through Speech Signals For Ambient Intelligence Applications}}
+      \field{volume}{1}
+      \field{year}{2013}
+      \field{pages}{244\bibrangedash 257}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TETC.2013.2274797
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/6568890/
+      \endverb
+    \endentry
+    \entry{Ververidis2004}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5ef9f620384558f65817d0a9684945ab}{%
+           family={Ververidis},
+           familyi={V\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fb1b9c401bda1332fb8e434e5e03255f}{%
+           family={Kotropoulos},
+           familyi={K\bibinitperiod},
+           given={Constantine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1dbba744f621fc4b369a8caaa382eb0}
+      \strng{fullhash}{e1dbba744f621fc4b369a8caaa382eb0}
+      \strng{authornamehash}{e1dbba744f621fc4b369a8caaa382eb0}
+      \strng{authorfullhash}{e1dbba744f621fc4b369a8caaa382eb0}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Eur. Signal Process. Conf.}
+      \field{title}{Automatic speech classification to five emotional states based on gender information}
+      \field{year}{2004}
+    \endentry
+    \entry{Wegmann_ICASSP_1996}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f02e2f8ad643ac4274f2d14553038ce4}{%
+           family={Wegmann},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=81d747734da047b1df6b732f5d13d78f}{%
+           family={McAllaster},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=71fdb2555b0f17ebd2c4f4945ca2577d}{%
+           family={Orloff},
+           familyi={O\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a965da6d3d57222f8ce5dd118c8d52a8}{%
+           family={Peskin},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{aaa431409120faa950034dc3a1ebf4f2}
+      \strng{fullhash}{cfa581c3e8baddd9d5c7598f99f2791f}
+      \strng{authornamehash}{aaa431409120faa950034dc3a1ebf4f2}
+      \strng{authorfullhash}{cfa581c3e8baddd9d5c7598f99f2791f}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{1996 IEEE Int. Conf. Acoust. Speech, Signal Process. Conf. Proc.}
+      \field{title}{{Speaker normalization on conversational telephone speech}}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{pages}{339\bibrangedash 341}
+      \range{pages}{3}
+    \endentry
+    \entry{Titze_JASA_1989}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bbc86c05f7a5320f311a1edc0492ad77}{%
+           family={Titze},
+           familyi={T\bibinitperiod},
+           given={Ingo\bibnamedelima R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbc86c05f7a5320f311a1edc0492ad77}
+      \strng{fullhash}{bbc86c05f7a5320f311a1edc0492ad77}
+      \strng{authornamehash}{bbc86c05f7a5320f311a1edc0492ad77}
+      \strng{authorfullhash}{bbc86c05f7a5320f311a1edc0492ad77}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Acoust. Soc. Am.}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{Physiologic and acoustic differences between male and female voices}}
+      \field{volume}{85}
+      \field{year}{1989}
+      \field{pages}{1699\bibrangedash 1707}
+      \range{pages}{9}
+    \endentry
+    \entry{Hollien1967}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c2b76f52eb3eae031d2cf12cd231e043}{%
+           family={Hollien},
+           familyi={H\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=77242b53d3be61fcfd23ed69d6def23a}{%
+           family={Malcik},
+           familyi={M\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb5bfa70e6a64dfd34b68e69010bc5eb}
+      \strng{fullhash}{bb5bfa70e6a64dfd34b68e69010bc5eb}
+      \strng{authornamehash}{bb5bfa70e6a64dfd34b68e69010bc5eb}
+      \strng{authorfullhash}{bb5bfa70e6a64dfd34b68e69010bc5eb}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Speech Monogr.}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{{Evaluation of gross‐sectional studies of adolescent voice change in males}}
+      \field{volume}{34}
+      \field{year}{1967}
+      \field{pages}{80\bibrangedash 84}
+      \range{pages}{5}
+    \endentry
+    \entry{Poon2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d87f0b9b5805cb01542725c26ab4877}{%
+           family={Poon},
+           familyi={P\bibinitperiod},
+           given={Morris\bibnamedelimb S.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8ff579a1ca2b5c31b134ad4a7ede1ba1}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Manwa\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{008745773785a7f7b3cc0eea10fb926d}
+      \strng{fullhash}{008745773785a7f7b3cc0eea10fb926d}
+      \strng{authornamehash}{008745773785a7f7b3cc0eea10fb926d}
+      \strng{authorfullhash}{008745773785a7f7b3cc0eea10fb926d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Speech, Lang. Hear.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{{The role of fundamental frequency and formants in voice gender identification}}
+      \field{volume}{18}
+      \field{year}{2015}
+      \field{pages}{161\bibrangedash 165}
+      \range{pages}{5}
+    \endentry
+    \entry{Gupta2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=54f33c59e83e31fcee419f8f0c258ca4}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Manish},
+           giveni={M\bibinitperiod}}}%
+        {{hash=34c04d959faebefd1c63e20371d929c5}{%
+           family={Bharti},
+           familyi={B\bibinitperiod},
+           given={Shambhu\bibnamedelima Shankar},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=da685baa5c40db8f70c203fe94a5f5a1}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Suneeta},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{03699b5761a0562d4d0f3bf5c6fd2380}
+      \strng{fullhash}{03699b5761a0562d4d0f3bf5c6fd2380}
+      \strng{authornamehash}{03699b5761a0562d4d0f3bf5c6fd2380}
+      \strng{authorfullhash}{03699b5761a0562d4d0f3bf5c6fd2380}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 Fourth Int. Conf. Parallel, Distrib. Grid Comput.}
+      \field{title}{{Support vector machine based gender identification using voiced speech frames}}
+      \field{year}{2016}
+      \field{pages}{737\bibrangedash 741}
+      \range{pages}{5}
+    \endentry
+    \entry{Nunes2004}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6cdd2b046deef28a1e5e6858c9cac41e}{%
+           family={Nunes},
+           familyi={N\bibinitperiod},
+           given={Rogean\bibnamedelima Rodrigues},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e1bcff4321277165d49f058c53ccc480}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Murilo\bibnamedelima Pereira},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=01fa790b6381a73130c83a824e078723}{%
+           family={{Sl}eigh},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima Wallace},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddeea08c34742ec2950b1aa7e598e5ac}
+      \strng{fullhash}{ddeea08c34742ec2950b1aa7e598e5ac}
+      \strng{authornamehash}{ddeea08c34742ec2950b1aa7e598e5ac}
+      \strng{authorfullhash}{ddeea08c34742ec2950b1aa7e598e5ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Bras. Anestesiol.}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Spectral Entropy: A New Method for Anesthetic Adequacy}
+      \field{volume}{54}
+      \field{year}{2004}
+    \endentry
+    \entry{Traunmller1994}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2a9c3a6fd97877a1edcea51820c7047f}{%
+           family={{Tr}aunmüller},
+           familyi={T\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a9c3a6fd97877a1edcea51820c7047f}
+      \strng{fullhash}{2a9c3a6fd97877a1edcea51820c7047f}
+      \strng{authornamehash}{2a9c3a6fd97877a1edcea51820c7047f}
+      \strng{authorfullhash}{2a9c3a6fd97877a1edcea51820c7047f}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The frequency range of the voice fundamental in the speech of male and female adults}
+      \field{type}{techreport}
+      \field{year}{1994}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

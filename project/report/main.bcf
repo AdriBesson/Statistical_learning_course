@@ -2133,10 +2133,30 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">resources/project_bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">project_bib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Nunes2004</bcf:citekey>
+    <bcf:citekey order="1">Wu_JASA_1991</bcf:citekey>
+    <bcf:citekey order="1">Wu_JASA_1991_2</bcf:citekey>
+    <bcf:citekey order="1">Childers_ICASSP_1988</bcf:citekey>
+    <bcf:citekey order="1">Harb2005</bcf:citekey>
+    <bcf:citekey order="1">Zeng2006</bcf:citekey>
+    <bcf:citekey order="1">Sorokin2008</bcf:citekey>
+    <bcf:citekey order="1">Metze_ICASSP_2007</bcf:citekey>
+    <bcf:citekey order="1">Bocklet_ICASSP_2008</bcf:citekey>
+    <bcf:citekey order="2">Harb2005</bcf:citekey>
+    <bcf:citekey order="3">Levi2015</bcf:citekey>
+    <bcf:citekey order="4">Bisio2013</bcf:citekey>
+    <bcf:citekey order="4">Ververidis2004</bcf:citekey>
+    <bcf:citekey order="5">Wegmann_ICASSP_1996</bcf:citekey>
+    <bcf:citekey order="6">Titze_JASA_1989</bcf:citekey>
+    <bcf:citekey order="7">Hollien1967</bcf:citekey>
+    <bcf:citekey order="7">Wu_JASA_1991</bcf:citekey>
+    <bcf:citekey order="7">Poon2015</bcf:citekey>
+    <bcf:citekey order="8">Gupta2016</bcf:citekey>
+    <bcf:citekey order="9">Zeng2006</bcf:citekey>
+    <bcf:citekey order="10">Nunes2004</bcf:citekey>
+    <bcf:citekey order="11">Traunmller1994</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
