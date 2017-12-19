@@ -17,7 +17,9 @@
 \contentsline {chapter}{\numberline {4}Evaluation of the Best Classification Method}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Considered classification methods}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Classification based on the fundamental frequency}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}The naive strategy}{11}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Description}{11}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Results}{11}{subsection.4.3.2}
-\contentsline {chapter}{Bibliography}{13}{appendix*.20}
+\contentsline {section}{\numberline {4.3}Classification based on a $80/20$ split of the dataset}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Description}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Results}{12}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Classification based on a $50/50$ split of the dataset}{12}{section.4.4}
+\contentsline {chapter}{\numberline {5}Application of the best classifier on an acquired dataset}{14}{chapter.5}
+\contentsline {chapter}{Bibliography}{15}{appendix*.20}
