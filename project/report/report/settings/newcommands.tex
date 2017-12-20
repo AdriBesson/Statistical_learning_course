@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signal Processing Laboratory (LTS5) - EPFL      %
+% LaTeX student report template                   %
+% Authors:                                        %
+%   D. Perdios – dimitris.perdios@epfl.ch         %
+%   A. Besson – adrien.besson@epfl.ch             %
+% v0.1 - 22.12.16                                 %
+% Typeset configuration: pdfLaTeX + Biber         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Useful to create specific newcommands
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+
+% Tables spacing
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Math
+\newcommand*{\abs}[1][]{\left\lvert#1\right\rVert}
+\newcommand*{\norm}[2][]{\left\lVert#2\right\rVert_{#1}}
+\newcommand*{\zeronorm}[1]{\norm[0]{#1}}
+\newcommand*{\onenorm}[1]{\norm[1]{#1}}
+\newcommand*{\twonorm}[1]{\norm[2]{#1}}
+\newcommand*{\twoonenorm}[1]{\norm[2,1]{#1}}
+\newcommand*{\fronorm}[1]{\norm[F]{#1}}
+\newcommand*{\infnorm}[1]{\norm[\infty]{#1}}
+\newcommand*{\pnorm}[1]{\norm[p]{#1}}
+\newcommand*{\tvnorm}[1]{\norm[TV]{#1}}
+\newcommand*{\mat}[1]{\mathbf{#1}}
+
+% Sets
+\newcommand*{\C}{\mathbb{C}}
+\newcommand*{\R}{\mathbb{R}}
+\newcommand*{\Q}{\mathbb{Q}}
+\newcommand*{\Z}{\mathbb{Z}}

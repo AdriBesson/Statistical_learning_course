@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signal Processing Laboratory (LTS5) - EPFL      %
+% LaTeX student report template                   %
+% Authors:                                        %
+%   D. Perdios – dimitris.perdios@epfl.ch         %
+%   A. Besson – adrien.besson@epfl.ch             %
+% v0.1 - 22.12.16                                 %
+% Typeset configuration: pdfLaTeX + Biber         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Document layout
+%\usepackage[showframe=true,pass=true]{geometry} % Useful to check the document margin layout
+
+% Typesetting
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern} % latin modern font
+\usepackage[scaled]{helvet} % sans serif typo
+\usepackage{csquotes} % pro­vides ad­vanced fa­cil­i­ties for in­line and dis­play quo­ta­tions (better to load when using biblatex)
+\usepackage{textcomp} % pro­vide many text sym­bols (such as baht, bul­let, copy­right, mu­si­cal­note, onequar­ter, sec­tion, and yen), in the TS1 en­cod­ing
+%\usepackage{setspace}
+%	\onehalfspacing % 1.5 linespaceing (already in CLS)
+%\usepackage{fancyhdr} % pro­vides ex­ten­sive fa­cil­i­ties, both for con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
+\usepackage{siunitx}
+\sisetup{
+	group-digits = integer, % only group digits (by three) for integers (not decimals)
+	binary-units = true, % load binary units
+	detect-all
+} % SI units system typset
+%\usepackage{enumitem}
+%	\setlist[enumerate]{label*=\arabic*.,topsep=5pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
+%	\setlist[itemize]{topsep=5pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
+\usepackage{bigfoot} % The pack­age aims to pro­vide a 'one-stop' so­lu­tion to re­quire­ments for foot­notes
+\usepackage{afterpage} % to use \footnotemark and \footnotetext in captions for special cases
+\usepackage{algorithm} % the al­go­rithm pack­age de­fines a float­ing al­go­rithm en­vi­ron­ment de­signed to work with the al­go­rith­mic style
+\usepackage{algpseudocode} % The algorithmicx package provides many possibilities to customize the layout of algorithms.
+
+% Math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+
+% Figures
+\usepackage{graphicx} % [draft] option usefull
+	\graphicspath{{figures/}}
+\usepackage{xcolor}
+%\usepackage[font=small, labelfont=bf, format=plain, labelsep=space, figurename=Figure, tablename=Table, skip=5pt]{caption} % defined in CLS
+\usepackage[labelfont=rm, labelformat=parens, labelsep=space, skip=0pt]{subcaption} % defined in CLS
+
+% Tables
+\usepackage{multirow}
+\usepackage{longtable} % use \linebreak instead of \\ in headers to avoid a bug with longtables (or longtabu) across two pages
+\usepackage{booktabs} % the pack­age en­hances the qual­ity of ta­bles (toprule, bottomrule, etc.)
+\usepackage{tabu}
+	\renewcommand{\arraystretch}{1.3}
+
+% Others
+%\usepackage[draft]{pdfpages} % include pdf pages
+\usepackage{calc}
+%\usepackage{todonotes} % \todo, \missingfigures and \listoftodos
+\usepackage{xifthen} % This pack­age ex­tends the ifthen pack­age by im­ple­ment­ing new com­mands to go within the first ar­gu­ment of \ifthenelse
+\usepackage{lipsum} % Lorem Ip­sum dummy text
+	\newcommand{\mylipsum}[1][]{\ifthenelse{\isempty{#1}}{\textcolor{gray}{\lipsum}}{\textcolor{gray}{\lipsum[#1]}}}
+\usepackage{blindtext} % Pro­vides the com­mands \blind­text and \Blind­text for cre­at­ing ‘blind’ text use­ful in test­ing new classes and pack­ages, and \blind­doc­u­ment, \Blind­doc­u­ment for cre­at­ing an en­tire ran­dom doc­u­ment with sec­tions, lists, math­e­mat­ics, etc.
+
+% Biblatex
+\usepackage[backend=biber,bibstyle=ieee,citestyle=ieee]{biblatex} % style=ieee loads both, bibstyle and citestyle
+
+% References and urls
+\usepackage{url}
+%\usepackage[pdfusetitle]{hyperref} 	% pdfusetitle = author and title used for pdf name
+\usepackage{hyperref}
+	\hypersetup{
+%		hypertexnames=false,			% hypertexnames option only used with autnum packages
+%		bookmarks=true,         		% show bookmarks bar?
+		bookmarksnumbered=true,		% section numbers in pdf bookmarks
+%    	unicode=false,				% non-Latin characters in Acrobat’s bookmarks
+%    	pdftoolbar=true,				% show Acrobat’s toolbar?
+%    	pdfmenubar=true,				% show Acrobat’s menu?
+%    	pdffitwindow=false,			% window fit to page when opened
+%    	pdfstartview={FitH},			% fits the width of the page to the window
+%		pdftitle={\runauthor{} - \runtitle{}}, % title
+%		pdfauthor={\runauthor{}},	% author
+%    	pdfsubject={Subject},		% subject of the document
+%    	pdfcreator={Creator},		% creator of the document
+%    	pdfproducer={Producer},		% producer of the document
+%    	pdfkeywords={keyword1, key2, key3}, % list of keywords
+%    	pdfnewwindow=true,			% links in new PDF window
+		colorlinks=true, 			% false: boxed links; true: colored links
+		pdfborder={0 0 0},			% box border style
+		linkcolor=black,				% color of internal links (change box color with linkbordercolor)
+		citecolor=black,				% color of links to bibliography
+		filecolor=black,				% color of file links
+		urlcolor=black				% color of external links
+	}
+\usepackage{bookmark} % Im­ple­ments a new book­mark (out­line) or­ga­ni­za­tion for pack­age hy­per­ref
+%TODO: if bookmark and hyperref not loaded, \phantomsection and \pdfbookmark won't be defined
+%\providecommand\phantomsection{}	% in case hyperref or bookmark is not loaded it allows \phatomsection
+%\usepackage{cleveref}				% MUST be loaded after hyperref
