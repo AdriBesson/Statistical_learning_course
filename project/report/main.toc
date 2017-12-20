@@ -1,25 +1,39 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {english}
-\contentsline {chapter}{List of Figures}{2}{section*.3}
-\contentsline {chapter}{List of Tables}{3}{section*.5}
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {chapter}{\numberline {2}The dataset}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}General considerations}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Description of the features}{6}{section.2.2}
-\contentsline {paragraph}{Frequency-related features}{6}{paragraph*.8}
-\contentsline {paragraph}{Skewness of the spectrum}{6}{paragraph*.9}
-\contentsline {paragraph}{Kurtosis}{6}{paragraph*.10}
-\contentsline {paragraph}{Shannon spectral entropy}{7}{paragraph*.11}
-\contentsline {paragraph}{Spectral flatness}{7}{paragraph*.12}
-\contentsline {section}{\numberline {2.3}Cleaning the dataset}{7}{section.2.3}
-\contentsline {chapter}{\numberline {3}Exploratory Data Analysis}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Evaluation of the Best Classification Method}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Considered classification methods}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Classification based on the fundamental frequency}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Classification based on a $80/20$ split of the dataset}{12}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Description}{12}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Results}{12}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Classification based on a $50/50$ split of the dataset}{12}{section.4.4}
-\contentsline {chapter}{\numberline {5}Application of the best classifier on an acquired dataset}{14}{chapter.5}
-\contentsline {chapter}{Bibliography}{15}{appendix*.20}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}The dataset}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}General considerations}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Description of the features}{4}{section.2.2}
+\contentsline {paragraph}{Frequency-related features}{4}{paragraph*.3}
+\contentsline {paragraph}{Skewness of the spectrum}{4}{paragraph*.4}
+\contentsline {paragraph}{Kurtosis}{4}{paragraph*.5}
+\contentsline {paragraph}{Shannon spectral entropy}{5}{paragraph*.6}
+\contentsline {paragraph}{Spectral flatness}{5}{paragraph*.7}
+\contentsline {section}{\numberline {2.3}Cleaning the dataset}{5}{section.2.3}
+\contentsline {chapter}{\numberline {3}Exploratory Data Analysis}{6}{chapter.3}
+\contentsline {chapter}{\numberline {4}Evaluation of the Best Classification Method}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Considered classification methods}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Classification based on the fundamental frequency}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Classification based on a $80/20$ split of the dataset}{10}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Experimental settings}{10}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Maximum-likelihood methods}{11}{subsection.4.3.2}
+\contentsline {paragraph}{Logistic Regression}{11}{paragraph*.14}
+\contentsline {paragraph}{Regularized Logistic Regression}{11}{paragraph*.15}
+\contentsline {paragraph}{Linear Discriminant Analysis}{11}{paragraph*.16}
+\contentsline {paragraph}{Quadratic Discriminant Analysis}{12}{paragraph*.17}
+\contentsline {subsection}{\numberline {4.3.3}k-Nearest Neighbors}{12}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Tree-based methods}{12}{subsection.4.3.4}
+\contentsline {paragraph}{Classification Trees}{12}{paragraph*.18}
+\contentsline {paragraph}{Bagging}{12}{paragraph*.19}
+\contentsline {paragraph}{Random Forests}{12}{paragraph*.20}
+\contentsline {paragraph}{Gradient Tree Boosting}{13}{paragraph*.21}
+\contentsline {subsection}{\numberline {4.3.5}Support Vector Machines}{13}{subsection.4.3.5}
+\contentsline {paragraph}{SVM with a linear kernel}{13}{paragraph*.22}
+\contentsline {paragraph}{SVM with a RBF kernel}{13}{paragraph*.23}
+\contentsline {subsection}{\numberline {4.3.6}Conclusion}{13}{subsection.4.3.6}
+\contentsline {section}{\numberline {4.4}Classification based on a $50/50$ split of the dataset}{13}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Experimental settings}{13}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Results and best classification method}{14}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Application of the best classifier on an acquired dataset}{15}{chapter.5}
+\contentsline {chapter}{Bibliography}{16}{appendix*.25}
