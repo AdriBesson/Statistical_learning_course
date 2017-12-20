@@ -640,6 +640,42 @@
       \field{type}{techreport}
       \field{year}{1994}
     \endentry
+    \entry{ESL_2001}{book}{}
+      \name{author}{3}{}{%
+        {{hash=53aedb7bc90d17e0634d5696c2e9903b}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={{\relax{}Tr}evor},
+           giveni={{\relax{}Tr}\bibinitperiod}}}%
+        {{hash=5ed1ed1eea80c12a42abbcb27b279e7a}{%
+           family={{Fr}iedman},
+           familyi={F\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{8dd9492966f78ec8c78f172666498868}
+      \strng{fullhash}{8dd9492966f78ec8c78f172666498868}
+      \strng{authornamehash}{8dd9492966f78ec8c78f172666498868}
+      \strng{authorfullhash}{8dd9492966f78ec8c78f172666498868}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Springer Series in Statistics}
+      \field{title}{{The Elements of Statistical Learning}}
+      \field{year}{2001}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

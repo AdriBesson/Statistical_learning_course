@@ -1,17 +1,17 @@
 \chapter{Exploratory Data Analysis}
 \label{chapter_data_exploration}
 
-As a preliminary step, we propose to perform an exploratory data analysis. This will give us some hints about the dataset, \eg the most important features, their correlation etc.
+As a preliminary step, we propose to perform an exploratory data analysis. This will give us some hints about the dataset, \eg{} the most important features, their correlation etc.
 
-In order to have a first overview of the features, a short description is summarized in Table~\ref{tab_data_exploration}. It can be noticed the frequencies have low values, which makes sense since they are expressed in \si{\kilo\hertz}. 
-The mean fundamental frequency is about \SI{143}{\hertz} which is coherent with the male and female fundamental frequencies~\cite{Traunmller1994}. 
+In order to have a first overview of the features, a short description is summarized in Table~\ref{tab_data_exploration}. It can be noticed that the frequencies have low values, which makes sense since they are expressed in \si{\kilo\hertz}. 
+The mean fundamental frequency is about \SI{143}{\hertz} which is coherent with the fundamental frequencies of males and females reported in the literature~\cite{Traunmller1994}. 
 
-Regarding the shape of the spectrum, the mean skewness indicates an average right-asymmetry of the spectrum. The mean kurtosis shows that the frequency distribution is leptokurtic. About the flatness of the spectrum, the features ``sfm'' and ``sp.ent'' seem to have inconsistent behaviour with respect to the their average value since one is above \num{0.5} and the other is below. However, the high standard deviation of ``sfm'' makes an analysis rather difficult.
+Regarding the shape of the spectrum, the mean value of ``skew'' indicates an average right-asymmetry of the spectrum. The mean value of ``kurt'' shows that the frequency distribution is leptokurtic. About the flatness of the spectrum, the mean values of ``sfm'' and ``sp.ent'' seem to have an inconsistent behaviour since one is above \num{0.5} and the other is below. However, the high standard deviation of ``sfm'' makes the analysis rather difficult.
 
 %%%%%%%%%%%% TABLE %%%%%%%%%%%
 \begin{table}[htb]
 	\ra{1.2}
-	\caption{Description of the features of the dataset}
+	\caption{Summary statistics of the features of the dataset}
 	 \begin{subtable}{\textwidth}
 			\centering
 			\begin{tabular}{@{} c c c c  c c c c c c @{}}\toprule
@@ -46,8 +46,8 @@ Regarding the shape of the spectrum, the mean skewness indicates an average righ
 
 Regarding the distribution of the samples, there are \num{1584} recording of male voices and \num{1584} recording of female voices. So the classes are perfectly balanced.
 
-Let us have a look to the correlation between the features. The correlation matrix, displayed in Figure~\ref{fig_corr_matrix}, exhibits high correlations between ``skew'' and ``kurt'' and between ``sp.ent'' and ``sfm'', which make sense since they quantify similar quantities. It can also be noticed that ``meanfreq'' and ``median'', ``Q25'', ``Q75'' are highly correlated which is self-evident given their definition. 
-Thus, feature selection methods should be efficient in removing such redundancies in the dataset.
+Let us have a look to the correlation between the features. The correlation matrix, displayed in Figure~\ref{fig_corr_matrix}, exhibits high correlations between ``skew'' and ``kurt'' and between ``sp.ent'' and ``sfm'', which make sense since they quantify similar quantities. It can also be noticed that ``meanfreq'' and ``median'', ``Q25'', ``Q75'' are highly correlated which is self-evident given their definitions. 
+Thus, feature importance should highlight such correlations.
 %%%%%%%%%%%% FIGURE %%%%%%%%%%%
 \newlength{\BoxPlotFigWidth}
 \newlength{\BoxPlotFigHeight}
@@ -74,9 +74,9 @@ Thus, feature selection methods should be efficient in removing such redundancie
 %%%%%%%%%%%% END OF FIGURE %%%%%%%%%%%
 
 In the state-of-the-art, it appears that the fundamental frequency is a key feature for AGR, as stated in Chapter~\ref{chap:introduction}. Intuitively, we also think that the mean frequency should be a good classifier. In order to analyze this, Figs.~\ref{fig_meanfreq_box} and~\ref{fig_meanfun_box} represent the box plots of ``meanfreq'' and ``meanfun'' respectively. 
-It can be noticed that ``meanfun'' is indeed a key feature for classification since the overlap between male and female is very low. Regarding ``meanfreq'', the overlap is bigger than for ``meanfun'' but remains rather low. 
+It can be noticed that ``meanfun'' is indeed a key feature for classification since the overlap between male and female distributions is very low. Regarding ``meanfreq'', the overlap is bigger than for ``meanfun''. 
 
-Figs.~\ref{fig_meanfreq_facet} and~\ref{fig_meanfun_facet} represent the distribution of male and female with respect to ``meanfreq'' and ``meanfun'' respectively. They confirm the analysis made with the box plot, \ie{} that ``meanfun'' is a key component in AGR and is a far better classifier than ``meanfreq''.
+Figs.~\ref{fig_meanfreq_facet} and~\ref{fig_meanfun_facet} represent the male and female distributions with respect to ``meanfreq'' and ``meanfun'' respectively. They substantiate the analysis made with the box plot, \ie{} that ``meanfun'' is a key component in AGR and is a far better classifier than ``meanfreq''.
 %%%%%%%%%%%% FIGURE %%%%%%%%%%%
 \settoheight{\BoxPlotFigHeight}{\includegraphics[width=\BoxPlotFigWidth]{figures/meanfreq_facetgrid.pdf}}
 \begin{figure}[htb]

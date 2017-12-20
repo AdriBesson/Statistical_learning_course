@@ -1,10 +1,19 @@
 \chapter{Application of the Best Classifier on Acquired Voice Recordings}
 \label{chap_test_our_dataset}
 
-One main disadvantage of the dataset provided for the study is that there is no information about the way the voices have been recorded. This prevents us from further study and characterization of the classification such as its robustness against noise.
+One main disadvantage of the dataset provided for the study is that there is no information about the way the voices have been recorded. This prevents us from further characterization such as the robustness of the classification against noise.
 
-To study this aspect, we propose to test the best classifier on a small dataset of voice recordings that we have acquired. PUT CHARACTERISTICS OF THE DATASET
-Once acquired, a ``.csv" file containing the features is generated using available R script~\footnote{https://github.com/primaryobjects/voice-gender/blob/master/sound.R}. 
+To study this aspect, we propose to test the best classifier on a small dataset of voice recordings that we have acquired. The dataset is made of \num{11} voice recordings, \num{3} from Hippolyte, \num{3} from Adrien, \num{2} from Hippolyte's girlfriend and \num{2} from Adrien's girlfriend. \num{3} recordings, \eg{} the two from Adrien's girlfriend and \num{1} from Hippolyte have been acquired in a noisy environment, \ie{} in a crowded place of EPFL.
 
-First, XGBoost, which has been identified as the best classifier in Section~\ref{sec_our_strat} is fitted on the whole dataset. Then it is used to classify the acquired voices, based on the features extracted from the ``.csv" file.
+A ``.csv" file containing the features is generated from the recordings using available R scripts\footnote{https://github.com/primaryobjects/voice-gender/blob/master/sound.R}. 
+
+Regarding the classifier, XGBoost, which has been identified as the best classifier in Section~\ref{sec_our_strat} is fitted on the whole dataset of \num{3168} voices. Then it is used to classify the acquired voices, based on the features extracted from the ``.csv" file.
+
+The classification error on the set of acquired voice is \num{0} for XGBoost, which means that it does not do any mistake, even in the noisy cases.
+
+As an indication, we also test the kNN classifier using the same process as before, and we obtain the same error as XGBoost.
+
+Thus, it seems that the proposed classification method is robust to small amount of noise. However, further experiments need to be performed to validate the preliminary results. 
+
+
 

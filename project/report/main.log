@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.20)  20 DEC 2017 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.20)  20 DEC 2017 19:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -1873,7 +1873,14 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -1890,8 +1897,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 43.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 43.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1ptm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1ptm.fd"
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 43.
@@ -2056,11 +2062,15 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 13.67995pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 12.
- [1
+
+Overfull \hbox (8.76526pt too wide) in paragraph at lines 12--12
+ [][] 
+ []
+
+[1
 
 {C:/Users/Adrien/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/
-logos/epfl.pdf>]
-(main.toc)
+logos/epfl.pdf>] (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -2081,12 +2091,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 21.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Reference `chap_intuitive_approach' on page 2 undefined on input
- line 21.
-
-) (content/chap2.tex [2
+)) (content/chap2.tex
+[2
 
 ]
 Chapter 2.
@@ -2100,7 +2106,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Chapter 3.
 \BoxPlotFigWidth=\skip107
 \BoxPlotFigHeight=\skip108
-<figures/correlation_matrix.pdf, id=150, pagebox=cropbox, 433.62pt x 433.62pt>
+<figures/correlation_matrix.pdf, id=114, pagebox=cropbox, 433.62pt x 433.62pt>
 File: figures/correlation_matrix.pdf Graphic file (type pdf)
 <use figures/correlation_matrix.pdf>
 Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 55.
@@ -2113,7 +2119,7 @@ Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 58.
  on input line 58.
 Package pdftex.def Info: Requested size: 362.41216pt x 362.39232pt on input lin
 e 58.
-<figures/meanfreq_boxplot.pdf, id=151, pagebox=cropbox, 407.15865pt x 276.71756
+<figures/meanfreq_boxplot.pdf, id=115, pagebox=cropbox, 407.15865pt x 276.71756
 pt>
 File: figures/meanfreq_boxplot.pdf Graphic file (type pdf)
 <use figures/meanfreq_boxplot.pdf>
@@ -2127,7 +2133,7 @@ Package pdftex.def Info: figures/meanfreq_boxplot.pdf  used on input line 69. o
 n input line 69.
 Package pdftex.def Info: Requested size: 217.427pt x 147.76585pt on input line 
 69.
-<figures/meanfun_boxplot.pdf, id=152, pagebox=cropbox, 413.54187pt x 276.71756p
+<figures/meanfun_boxplot.pdf, id=116, pagebox=cropbox, 413.54187pt x 276.71756p
 t>
 File: figures/meanfun_boxplot.pdf Graphic file (type pdf)
 <use figures/meanfun_boxplot.pdf>
@@ -2138,7 +2144,7 @@ e 70.
 [6
 
 ]
-<figures/meanfreq_facetgrid.pdf, id=168, pagebox=cropbox, 424.6726pt x 353.4642
+<figures/meanfreq_facetgrid.pdf, id=132, pagebox=cropbox, 424.6726pt x 353.4642
 8pt>
 File: figures/meanfreq_facetgrid.pdf Graphic file (type pdf)
 <use figures/meanfreq_facetgrid.pdf>
@@ -2152,7 +2158,7 @@ Package pdftex.def Info: figures/meanfreq_facetgrid.pdf  used on input line 85.
  on input line 85.
 Package pdftex.def Info: Requested size: 217.42903pt x 180.97093pt on input lin
 e 85.
-<figures/meanfun_facetgrid.pdf, id=169, pagebox=cropbox, 424.6726pt x 353.46428
+<figures/meanfun_facetgrid.pdf, id=133, pagebox=cropbox, 424.6726pt x 353.46428
 pt>
 File: figures/meanfun_facetgrid.pdf Graphic file (type pdf)
 <use figures/meanfun_facetgrid.pdf>
@@ -2180,23 +2186,44 @@ Chapter 4.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 72.
+(hyperref)                removing `math shift' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 72.
+(hyperref)                removing `math shift' on input line 73.
 
 [10]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 86.
- [11] [12]
+(Font)              <9> on input line 87.
+ [11]
+<figures/Rplot02.pdf, id=298, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/Rplot02.pdf Graphic file (type pdf)
+<use figures/Rplot02.pdf>
+Package pdftex.def Info: figures/Rplot02.pdf  used on input line 138. on input 
+line 138.
+Package pdftex.def Info: Requested size: 217.42265pt x 153.81837pt on input lin
+e 138.
+<figures/Rplot03.pdf, id=299, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/Rplot03.pdf Graphic file (type pdf)
+<use figures/Rplot03.pdf>
+Package pdftex.def Info: figures/Rplot03.pdf  used on input line 142. on input 
+line 142.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 142.
+File: figures/Rplot03.pdf Graphic file (type pdf)
+<use figures/Rplot03.pdf>
+Package pdftex.def Info: figures/Rplot03.pdf  used on input line 143. on input 
+line 143.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 143.
+ [12 <./figures/Rplot03.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 177.
+(hyperref)                removing `math shift' on input line 188.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 177.
+(hyperref)                removing `math shift' on input line 188.
 
 [13]) (content/chap5.tex [14]
 Chapter 5.
@@ -2204,33 +2231,39 @@ Chapter 5.
 
 ]
 Chapter 6.
-) (content/app1.tex) (content/biblio.tex [16
+) (content/biblio.tex [16
 
 ] [17
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
  [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 65.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30605 strings out of 493333
- 554951 string characters out of 3139363
- 1114112 words of memory out of 3000000
- 33518 multiletter control sequences out of 15000+200000
- 666255 words of font info for 119 fonts, out of 3000000 for 9000
+ 30624 strings out of 493333
+ 555350 string characters out of 3139363
+ 1113049 words of memory out of 3000000
+ 33535 multiletter control sequences out of 15000+200000
+ 674791 words of font info for 121 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,94p,10412b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,94p,10412b,1824s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -2252,9 +2285,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8
 a.pfb>
-Output written on main.pdf (19 pages, 497887 bytes).
+Output written on main.pdf (19 pages, 501420 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

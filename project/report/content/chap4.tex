@@ -30,6 +30,7 @@ In our analysis we implement the following statistical learning methods to predi
 	\item \textbf{Support Vector Machines (SVM):} SVM perform well in classification problems where there is a clear margin of separation. 
 	We experiment with 2 kernels: the linear and the radial basis function~(RBF).
 \end{itemize}
+For an exhaustive description of the classification methods, please refer to~\cite{ESL_2001}.
 \section{Classification based on the fundamental frequency}
 \label{sec_intuitive_approach}
 Based on the exploratory data analysis described in Chapter~\ref{chapter_data_exploration}, we propose to perform the classification based on the ``meanfun'' feature alone. 
@@ -40,7 +41,7 @@ The training set is used to fit the models and for best parameter selection if n
 The experiments have been performed on Python \num{3}\footnote{\url{{https://github.com/AdriBesson/Statistical_learning_course/tree/develop/project}}} with a single seed number for reproducibility of the results.
 \begin{table}[htb]
 	\ra{1.2}
-	\caption{Classification Error of the Methods for Classification With ``meanfun'' Feature}
+	\caption{Classification Error Estimate of the Methods for Classification With ``meanfun'' Feature}
 	\begin{center}
 		\begin{tabular}{@{} c c c @{}}\toprule
 			Type & Methods & \\
@@ -83,7 +84,7 @@ The results are reported in Table~\ref{tab_res_naive}.
 
 \begin{table}[htb]
 	\ra{1.2}
-	\caption{Classification Error of the Methods for Different Seed Numbers With $80/20$ Split}
+	\caption{Classification Error Estimate of the Methods for Different Seed Numbers With $80/20$ Split}
 	\begin{center}
 		\begin{tabular}{@{} c c c  c c c c c c @{}}\toprule
 			\multirow{2}{*}{Type} & \multirow{2}{*}{Methods} &  \multicolumn{5}{c}{Seed number}
@@ -121,8 +122,8 @@ We observe that Ridge regularization gives the same results as logistic regressi
 $$ Plots ~ of ~ parameter~skrinkage$$ 
 
 \paragraph{Linear Discriminant Analysis}
-LDA gives a test error of \num{0.0315}. In order to check whether the model assumptions are actually satisfied, we resort to Mardias Test for multivariate normality. Mardias Test is based on the multivariate extensions of skewness and kurtosis measures. Under the null hypothesis, our sample is drawn from a multivariate normal. 
-We run Mardias Test on the two data matrices corresponding to male and female classes and conclude that normality assumption is violated. However, the two covariance matrices are quite similar and one can argue that the assumption of a common covariance matrix is realistic. 
+LDA gives a test error of \num{0.0315}. In order to check whether the model assumptions are actually satisfied, we resort to Mardias' test\footnote{\url{https://cran.r-project.org/web/packages/MVN/index.html}} for multivariate normality. Mardias' test is based on the multivariate extensions of skewness and kurtosis measures. Under the null hypothesis, our sample is drawn from a multivariate normal. 
+We run Mardias' test on the two data matrices corresponding to male and female classes and conclude that normality assumption is violated. However, the two covariance matrices are quite similar and one can argue that the assumption of a common covariance matrix is realistic. 
 To sum up, LDA seems to perform well, despite the lack of normality. We suspect that the reason lies in some particularity of our data set.
 
 
@@ -131,8 +132,18 @@ As we have seen above, the two covariance matrices of our two classes (male/fema
 
 
 \subsection{k-Nearest Neighbors}
-We use \num{10}-fold cross validation with one-standard-error rule to find that the optimal value for parameter k, is $k=9$. Then we implement \num{9}-NN, which yield a test error of \num{0.03}. We observe a slight improvement compared to LDA and QDA, which can be attributed to the high flexibility of kNN. We reckon that the linear boundary is not the most appropriate to separate the \num{2} classes.
+We use \num{10}-fold cross validation with one-standard-error rule to find that the optimal value for parameter k, is $k=9$. Then we implement \num{9}-NN, which yields a test error of \num{0.03}. We observe a slight improvement compared to LDA and QDA, which can be attributed to the high flexibility of kNN. We reckon that the linear boundary is not the most appropriate to separate the \num{2} classes.
 $$ Plot ~ for ~ determing ~ k ~ with ~ CV~ one-standard-error rule $$ 
+
+\settoheight{\BoxPlotFigHeight}{\includegraphics[width=\BoxPlotFigWidth]{figures/Rplot02.pdf}}
+\begin{figure}[htb]
+	% Maximum length
+	\hfill%
+	\subcaptionbox{\label{}}{\includegraphics[height=\BoxPlotFigHeight]{figures/Rplot03.pdf}}\hfill%
+	\subcaptionbox{\label{}}{\includegraphics[height=\BoxPlotFigHeight]{figures/Rplot03.pdf}}\hfill\null%
+	\caption{}
+	\label{fig_test}
+\end{figure}
 
 \subsection{Tree-based methods}
 
@@ -178,18 +189,17 @@ Finally, we implement SVM with a gaussian radial kernel. \num{10}-fold cross val
 \label{sec_our_strat}
 \subsection{Experimental settings}
 From Section~\ref{sec_naive_strat}, it appears that the high variance of the test error makes the evaluation of the best model rather hard.
-In order to decrease the variance, we suggest to use another strategy based described hereafter. 
-First we perform a $50/50$ split of the dataset. We obtain two subsets denoted as $S1$ and $S2$ respectively.
+In order to decrease the variance, we suggest to use another strategy described hereafter. 
+First we perform a $50/50$ split of the dataset and we obtain two subsets of same dimension, denoted as $S1$ and $S2$.
 We use $S1$ to perform best parameter selection based on \num{10}-fold cross validation.
-We use $S2$ to compare the model based on \num{5}-fold cross-validated classification error, where the classification error is computed as the $0-1$ loss. 
-The advantage of such an approach is that the averaging induced by the \num{5}-fold cross-validation should reduce the variance of the classification error, while keeping a relatively low bias because of the size of $S2$. 
+We use $S2$ for model comparison based on averaging of the classification error estimates on \num{5} folds, where the classification error estimated is computed as the $0-1$ loss. 
+The advantage of such an approach is that the averaging induced by the \num{5} folds should reduce the variance of the classification error, while keeping a relatively low bias because of the size of $S2$. 
 
-As in Section~\ref{sec_naive_strat}, the errors are computed for \num{5} seed numbers in order to study the variability of the models.
-The results are reported in Table~\ref{tab_res_our_strategy}.
+As in Section~\ref{sec_naive_strat}, the errors are computed for \num{5} seed numbers in order to study the variability of the models and the results are reported in Table~\ref{tab_res_our_strategy}.
 
 \begin{table}[htb]
 	\ra{1.2}
-	\caption{Classification Error of the Methods for Different Seed Numbers With $50/50$ Split}
+	\caption{Classification Error Estimate of the Methods for Different Seed Numbers With $50/50$ Split}
 	\begin{center}
 		\begin{tabular}{@{} c c c  c c c c c c@{}}\toprule
 			\multirow{2}{*}{Type} & \multirow{2}{*}{Methods} &  \multicolumn{5}{c}{Seed number}
@@ -219,13 +229,13 @@ The results are reported in Table~\ref{tab_res_our_strategy}.
 \end{table}
 
 \subsection{Results and best classification method}
-It can be noticed that the proposed strategy:
+From Table~\ref{tab_res_our_strategy}, it can be noticed that the proposed strategy:
 \begin{itemize}
-	\item gives very similar results to the $80/20$ split regarding the classification errors of the different methods
+	\item gives very similar results to the $80/20$ split regarding the classification errors of the different methods;
  	\item tends to decrease the variance with respect to the seed number. Indeed, the average standard deviation over the different estimators is \num{0.00523} while it was \num{0.00636} with the $80/20$ split.
 \end{itemize} 
 
 Surprisingly, the variance reduction does not work for all the methods. For instance, QDA has a higher variance with the proposed strategy than with the $80/20$ split. 
 This can be explained by the fact that a \num{5}-fold cross validation is not sufficient to significantly reduce the variance. However, we believe that, given the amount of data, increasing the number of folds may have a significant impact on the bias. 
 
-Thus, the proposed strategy allows us to identify that XGBoost slightly outperforms other tree-based method as well as the SVM model with the RBF kernel. XGBoost is therefore chosen as the best classification model for our gender classification task. 
+Nevertheless, the proposed strategy allows us to identify that XGBoost slightly outperforms other tree-based method as well as the SVM with the RBF kernel. It is therefore chosen as the best classification model for our gender classification task. 
