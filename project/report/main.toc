@@ -15,26 +15,26 @@
 \contentsline {chapter}{\numberline {4}Evaluation of the Best Classification Method}{9}{chapter.4}
 \contentsline {section}{\numberline {4.1}Considered classification methods}{9}{section.4.1}
 \contentsline {section}{\numberline {4.2}Classification based on the fundamental frequency}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Classification based on a $80/20$ split of the dataset}{10}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Experimental settings}{10}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.3}Classification based on a $80/20$ split of the dataset}{11}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Experimental settings}{11}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Maximum-likelihood methods}{11}{subsection.4.3.2}
-\contentsline {paragraph}{Logistic Regression}{11}{paragraph*.14}
-\contentsline {paragraph}{Regularized Logistic Regression}{11}{paragraph*.15}
-\contentsline {paragraph}{Linear Discriminant Analysis}{11}{paragraph*.16}
-\contentsline {paragraph}{Quadratic Discriminant Analysis}{12}{paragraph*.17}
-\contentsline {subsection}{\numberline {4.3.3}k-Nearest Neighbors}{12}{subsection.4.3.3}
+\contentsline {paragraph}{Logistic regression}{11}{paragraph*.14}
+\contentsline {paragraph}{Regularized logistic regression}{11}{paragraph*.15}
+\contentsline {paragraph}{Linear discriminant analysis}{12}{paragraph*.17}
+\contentsline {paragraph}{Quadratic discriminant analysis}{12}{paragraph*.18}
+\contentsline {subsection}{\numberline {4.3.3}k-Nearest neighbors}{12}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Tree-based methods}{12}{subsection.4.3.4}
-\contentsline {paragraph}{Classification Trees}{12}{paragraph*.19}
-\contentsline {paragraph}{Bagging}{12}{paragraph*.20}
-\contentsline {paragraph}{Random Forests}{13}{paragraph*.21}
-\contentsline {paragraph}{Gradient Tree Boosting}{13}{paragraph*.22}
-\contentsline {subsection}{\numberline {4.3.5}Support Vector Machines}{13}{subsection.4.3.5}
-\contentsline {paragraph}{SVM with a linear kernel}{13}{paragraph*.23}
-\contentsline {paragraph}{SVM with a RBF kernel}{13}{paragraph*.24}
-\contentsline {subsection}{\numberline {4.3.6}Conclusion}{13}{subsection.4.3.6}
-\contentsline {section}{\numberline {4.4}Classification based on a $50/50$ split of the dataset}{13}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Experimental settings}{13}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Results and best classification method}{14}{subsection.4.4.2}
-\contentsline {chapter}{\numberline {5}Application of the Best Classifier on Acquired Voice Recordings}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{16}{chapter.6}
-\contentsline {chapter}{Bibliography}{17}{chapter*.26}
+\contentsline {paragraph}{Classification trees}{12}{paragraph*.20}
+\contentsline {paragraph}{Bagging}{12}{paragraph*.22}
+\contentsline {paragraph}{Random forests}{13}{paragraph*.23}
+\contentsline {paragraph}{Gradient tree boosting}{14}{paragraph*.26}
+\contentsline {subsection}{\numberline {4.3.5}Support vector machines}{14}{subsection.4.3.5}
+\contentsline {paragraph}{SVM with a linear kernel}{14}{paragraph*.27}
+\contentsline {paragraph}{SVM with a RBF kernel}{14}{paragraph*.28}
+\contentsline {subsection}{\numberline {4.3.6}Conclusion}{14}{subsection.4.3.6}
+\contentsline {section}{\numberline {4.4}Classification based on a $50/50$ split of the dataset}{15}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Experimental settings}{15}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Results and best classification method}{15}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Application of the Best Classifier on Acquired Voice Recordings}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{18}{chapter.6}
+\contentsline {chapter}{Bibliography}{19}{chapter*.31}

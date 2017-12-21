@@ -45,7 +45,7 @@ The dataset takes the form of a ``.csv'' file where each row is composed of the 
 The features are all quantitative and represent frequency characteristics of the voices.
 \section{Description of the features}
 \label{sec:feat_desc}
-Before starting the data analysis, it is important to perfectly understand the features involved in the exercise. This will be very useful in a preprocessing step, since it will allow us to remove collinear features. It will also be a great asset when it will come to the analysis of the most important features involved in the classification process.
+Before starting the data analysis, it is important to perfectly understand the features involved in the exercise. This will be very useful in a preprocessing step, since it will allow us to remove similar or linear combination of features. It will also be a great asset when it will come to the analysis of the most important features involved in the classification process.
 
 As already pointed out in Section~\ref{sec:gen_cons}, the extracted features are all related to the spectrum. 
 \paragraph{Frequency-related features}
@@ -57,14 +57,14 @@ where $N$ is the number of frequency components of the spectrum, $f_i$ is the i-
 As described p.\num{163} of the seewave documentation, it is equal to the feature ``centroid''.
 The feature ``sd'' is the standard deviation of the frequencies, calculated as:
 \begin{equation}
-\sigma_f = \sqrt{\sum\limits_{i=1}^{N}y_i \left(f_i-\ie\mu_f\right)^2}.
+\sigma_f = \sqrt{\sum\limits_{i=1}^{N}y_i \left(f_i-\mu_f\right)^2}.
 \end{equation}
 
 The feature ``median'' is the median frequency calculated as the frequency where the spectrum is divided into frequency intervals of same energy. The calculation of the quartiles ``IQ25'' and  ``IQ75'' is based on the same criterion. The interquartile range ``IQR'' is calculated as the difference between the first and the first quartile.
 
 The feature ``mode'' characterizes the dominant frequency of the spectrum, \ie{} the frequency with the highest amplitude. It is very similar to ``peakf'', the peak frequency, which corresponds to the frequency with the highest energy. The fundamental frequency is the lowest frequency of the spectrum.
 
-The features ``meanfun'', ``minfun'', ``maxfun'', ``meandom'', ``maxdom'', ``mindom'', ``dfrange'' and ``modindx'' are calculated as the mean, minimum and maximum values of the fundamental and dominant frequencies respectively, where the mean, maximum and minimum are taken across many time segments which compose a given voice recording.
+The features ``meanfun'', ``minfun'', ``maxfun'', ``meandom'', ``maxdom'' and ``mindom'' are calculated as the mean, minimum and maximum values of the fundamental and dominant frequencies respectively, where the mean, maximum and minimum are taken across many time segments which compose a given voice recording. The feature ``dfrange'' is the difference between ``maxdom'' and ``mindom'' and ``modindx'' is the mean absolute difference of the fundamental frequencies.
 
 In addition to the frequency-related features, we can find measures on the shape of the spectrum which may give very interesting additional information. 
 \paragraph{Skewness of the spectrum}
@@ -80,7 +80,7 @@ The kurtosis is a measure of the ``tailedness'' of a probability distribution. I
 \label{eq_kurtosis}
 	K = \frac{1}{\sigma_f^4}\frac{\sum\limits_{i=1}^{N} \left(f_i - \mu_f\right)^4}{N-1}.
 \end{equation}
-When $K=3$, the frequency distribution is normal. When $K<3$, the frequency distribution is said to be \textit{platikurtic}, it has fewer items around the means than in the tails, compared to a normal distribution. When $K>3$, the distribution is said to be \textit{leptokurtic} and has more frequency around the mean than in the tails, compared to a normal distribution.
+When $K=3$, the frequency distribution is normal. When $K<3$, the frequency distribution is said to be \textit{platikurtic}, it has fewer components around the means than in the tails compared to a normal distribution. When $K>3$, the distribution is said to be \textit{leptokurtic} and has more components around the mean than in the tails compared to a normal distribution.
 \paragraph{Shannon spectral entropy}
 The Shannon entropy is used to discriminate whether the voice signal is noisy or pure~\cite{Nunes2004}. It is calculated as follows:
 \begin{equation}
@@ -90,7 +90,7 @@ The Shannon entropy is used to discriminate whether the voice signal is noisy or
 
 If the signal is pure, then all the energy is concentrated in one frequency component, \ie{} $y_i = \delta_{ij}$ and $H=0$. If the signal is a white noise, then $y_i = 1/N, \; \forall i \in \left\lbrace 1,...,N \right\rbrace$ and $H=1$.
 \paragraph{Spectral flatness}
-The spectral flatness is rather similar to the spectral entropy. It is measured as the ratio between the geometric mean and the arithmetic mean:
+The spectral flatness is rather similar to the spectral entropy. It is measured as the ratio between the geometric mean and the arithmetic mean of the spectral components:
 \begin{equation}
 \label{eq:spec_flat}
 	F = N \frac{\sqrt[N]{\prod\limits_{i=1}^{N} y_i}}{\sum \limits_{i=1}^{N} y_i}.

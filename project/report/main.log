@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.20)  20 DEC 2017 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.20)  21 DEC 2017 11:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -1875,10 +1875,13 @@ Package biblatex Info: ... file 'english.lbx' found.
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 ) (main.aux
 
-LaTeX Warning: Label `' multiply defined.
+LaTeX Warning: Label `fig_tree' multiply defined.
 
 
-LaTeX Warning: Label `sub@' multiply defined.
+LaTeX Warning: Label `fig_tree' multiply defined.
+
+
+LaTeX Warning: Label `fig_tree_feature' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -2106,66 +2109,66 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Chapter 3.
 \BoxPlotFigWidth=\skip107
 \BoxPlotFigHeight=\skip108
-<figures/correlation_matrix.pdf, id=114, pagebox=cropbox, 433.62pt x 433.62pt>
+<figures/correlation_matrix.pdf, id=150, pagebox=cropbox, 433.62pt x 433.62pt>
 File: figures/correlation_matrix.pdf Graphic file (type pdf)
 <use figures/correlation_matrix.pdf>
-Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 55.
- on input line 55.
+Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 54.
+ on input line 54.
 Package pdftex.def Info: Requested size: 362.37569pt x 362.39232pt on input lin
-e 55.
+e 54.
 File: figures/correlation_matrix.pdf Graphic file (type pdf)
 <use figures/correlation_matrix.pdf>
-Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 58.
- on input line 58.
+Package pdftex.def Info: figures/correlation_matrix.pdf  used on input line 57.
+ on input line 57.
 Package pdftex.def Info: Requested size: 362.41216pt x 362.39232pt on input lin
-e 58.
-<figures/meanfreq_boxplot.pdf, id=115, pagebox=cropbox, 407.15865pt x 276.71756
+e 57.
+<figures/meanfreq_boxplot.pdf, id=151, pagebox=cropbox, 407.15865pt x 276.71756
 pt>
 File: figures/meanfreq_boxplot.pdf Graphic file (type pdf)
 <use figures/meanfreq_boxplot.pdf>
-Package pdftex.def Info: figures/meanfreq_boxplot.pdf  used on input line 65. o
-n input line 65.
+Package pdftex.def Info: figures/meanfreq_boxplot.pdf  used on input line 64. o
+n input line 64.
 Package pdftex.def Info: Requested size: 217.42265pt x 147.76585pt on input lin
-e 65.
+e 64.
 File: figures/meanfreq_boxplot.pdf Graphic file (type pdf)
 <use figures/meanfreq_boxplot.pdf>
-Package pdftex.def Info: figures/meanfreq_boxplot.pdf  used on input line 69. o
-n input line 69.
+Package pdftex.def Info: figures/meanfreq_boxplot.pdf  used on input line 68. o
+n input line 68.
 Package pdftex.def Info: Requested size: 217.427pt x 147.76585pt on input line 
-69.
-<figures/meanfun_boxplot.pdf, id=116, pagebox=cropbox, 413.54187pt x 276.71756p
+68.
+<figures/meanfun_boxplot.pdf, id=152, pagebox=cropbox, 413.54187pt x 276.71756p
 t>
 File: figures/meanfun_boxplot.pdf Graphic file (type pdf)
 <use figures/meanfun_boxplot.pdf>
-Package pdftex.def Info: figures/meanfun_boxplot.pdf  used on input line 70. on
- input line 70.
+Package pdftex.def Info: figures/meanfun_boxplot.pdf  used on input line 69. on
+ input line 69.
 Package pdftex.def Info: Requested size: 220.83571pt x 147.76585pt on input lin
-e 70.
+e 69.
 [6
 
 ]
-<figures/meanfreq_facetgrid.pdf, id=132, pagebox=cropbox, 424.6726pt x 353.4642
+<figures/meanfreq_facetgrid.pdf, id=168, pagebox=cropbox, 424.6726pt x 353.4642
 8pt>
 File: figures/meanfreq_facetgrid.pdf Graphic file (type pdf)
 <use figures/meanfreq_facetgrid.pdf>
-Package pdftex.def Info: figures/meanfreq_facetgrid.pdf  used on input line 81.
- on input line 81.
+Package pdftex.def Info: figures/meanfreq_facetgrid.pdf  used on input line 80.
+ on input line 80.
 Package pdftex.def Info: Requested size: 217.42265pt x 180.97093pt on input lin
-e 81.
+e 80.
 File: figures/meanfreq_facetgrid.pdf Graphic file (type pdf)
 <use figures/meanfreq_facetgrid.pdf>
-Package pdftex.def Info: figures/meanfreq_facetgrid.pdf  used on input line 85.
- on input line 85.
+Package pdftex.def Info: figures/meanfreq_facetgrid.pdf  used on input line 84.
+ on input line 84.
 Package pdftex.def Info: Requested size: 217.42903pt x 180.97093pt on input lin
-e 85.
-<figures/meanfun_facetgrid.pdf, id=133, pagebox=cropbox, 424.6726pt x 353.46428
+e 84.
+<figures/meanfun_facetgrid.pdf, id=169, pagebox=cropbox, 424.6726pt x 353.46428
 pt>
 File: figures/meanfun_facetgrid.pdf Graphic file (type pdf)
 <use figures/meanfun_facetgrid.pdf>
-Package pdftex.def Info: figures/meanfun_facetgrid.pdf  used on input line 86. 
-on input line 86.
+Package pdftex.def Info: figures/meanfun_facetgrid.pdf  used on input line 85. 
+on input line 85.
 Package pdftex.def Info: Requested size: 217.42903pt x 180.97093pt on input lin
-e 86.
+e 85.
 ) (content/chap4.tex [7 <./figures/correlation_matrix.pdf>] [8 <./figures/meanf
 req_boxplot.pdf> <./figures/meanfun_boxplot.pdf
 
@@ -2195,75 +2198,165 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [10]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 87.
+<figures/lasso.pdf, id=320, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/lasso.pdf Graphic file (type pdf)
+<use figures/lasso.pdf>
+Package pdftex.def Info: figures/lasso.pdf  used on input line 123. on input li
+ne 123.
+Package pdftex.def Info: Requested size: 271.7835pt x 192.28436pt on input line
+ 123.
+File: figures/lasso.pdf Graphic file (type pdf)
+<use figures/lasso.pdf>
+Package pdftex.def Info: figures/lasso.pdf  used on input line 127. on input li
+ne 127.
+Package pdftex.def Info: Requested size: 271.78345pt x 192.28436pt on input lin
+e 127.
  [11]
-<figures/Rplot02.pdf, id=298, pagebox=cropbox, 844.15375pt x 597.23125pt>
-File: figures/Rplot02.pdf Graphic file (type pdf)
-<use figures/Rplot02.pdf>
-Package pdftex.def Info: figures/Rplot02.pdf  used on input line 138. on input 
-line 138.
+<figures/kNN_new.pdf, id=334, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/kNN_new.pdf Graphic file (type pdf)
+<use figures/kNN_new.pdf>
+Package pdftex.def Info: figures/kNN_new.pdf  used on input line 141. on input 
+line 141.
+Package pdftex.def Info: Requested size: 271.7835pt x 192.28436pt on input line
+ 141.
+File: figures/kNN_new.pdf Graphic file (type pdf)
+<use figures/kNN_new.pdf>
+Package pdftex.def Info: figures/kNN_new.pdf  used on input line 145. on input 
+line 145.
+Package pdftex.def Info: Requested size: 271.78345pt x 192.28436pt on input lin
+e 145.
+<figures/pruned.pdf, id=337, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/pruned.pdf Graphic file (type pdf)
+<use figures/pruned.pdf>
+Package pdftex.def Info: figures/pruned.pdf  used on input line 157. on input l
+ine 157.
 Package pdftex.def Info: Requested size: 217.42265pt x 153.81837pt on input lin
-e 138.
-<figures/Rplot03.pdf, id=299, pagebox=cropbox, 844.15375pt x 597.23125pt>
-File: figures/Rplot03.pdf Graphic file (type pdf)
-<use figures/Rplot03.pdf>
-Package pdftex.def Info: figures/Rplot03.pdf  used on input line 142. on input 
-line 142.
+e 157.
+<figures/tree.pdf, id=338, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/tree.pdf Graphic file (type pdf)
+<use figures/tree.pdf>
+Package pdftex.def Info: figures/tree.pdf  used on input line 161. on input lin
+e 161.
 Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
-e 142.
-File: figures/Rplot03.pdf Graphic file (type pdf)
-<use figures/Rplot03.pdf>
-Package pdftex.def Info: figures/Rplot03.pdf  used on input line 143. on input 
-line 143.
+e 161.
+File: figures/pruned.pdf Graphic file (type pdf)
+<use figures/pruned.pdf>
+Package pdftex.def Info: figures/pruned.pdf  used on input line 162. on input l
+ine 162.
 Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
-e 143.
- [12 <./figures/Rplot03.pdf>]
+e 162.
+ [12 <./figures/lasso.pdf>]
+<figures/bagging.pdf, id=360, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/bagging.pdf Graphic file (type pdf)
+<use figures/bagging.pdf>
+Package pdftex.def Info: figures/bagging.pdf  used on input line 172. on input 
+line 172.
+Package pdftex.def Info: Requested size: 217.42265pt x 153.81837pt on input lin
+e 172.
+File: figures/bagging.pdf Graphic file (type pdf)
+<use figures/bagging.pdf>
+Package pdftex.def Info: figures/bagging.pdf  used on input line 176. on input 
+line 176.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 176.
+<figures/RF.pdf, id=361, pagebox=cropbox, 844.15375pt x 597.23125pt>
+File: figures/RF.pdf Graphic file (type pdf)
+<use figures/RF.pdf>
+Package pdftex.def Info: figures/RF.pdf  used on input line 177. on input line 
+177.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 177.
+<figures/meanDecreaseGini.pdf, id=363, pagebox=cropbox, 844.15375pt x 597.23125
+pt>
+File: figures/meanDecreaseGini.pdf Graphic file (type pdf)
+<use figures/meanDecreaseGini.pdf>
+Package pdftex.def Info: figures/meanDecreaseGini.pdf  used on input line 185. 
+on input line 185.
+Package pdftex.def Info: Requested size: 217.42265pt x 153.81837pt on input lin
+e 185.
+File: figures/meanDecreaseGini.pdf Graphic file (type pdf)
+<use figures/meanDecreaseGini.pdf>
+Package pdftex.def Info: figures/meanDecreaseGini.pdf  used on input line 189. 
+on input line 189.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 189.
+<figures/partialDependence.pdf, id=364, pagebox=cropbox, 844.15375pt x 597.2312
+5pt>
+File: figures/partialDependence.pdf Graphic file (type pdf)
+<use figures/partialDependence.pdf>
+Package pdftex.def Info: figures/partialDependence.pdf  used on input line 190.
+ on input line 190.
+Package pdftex.def Info: Requested size: 217.41388pt x 153.81837pt on input lin
+e 190.
+ [13 <./figures/kNN_new.pdf> <./figures/tree.pdf> <./figures/pruned.pdf>] [14 <
+./figures/bagging.pdf> <./figures/RF.pdf> <./figures/meanDecreaseGini.pdf> <./f
+igures/partialDependence.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 188.
+(hyperref)                removing `math shift' on input line 206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 188.
+(hyperref)                removing `math shift' on input line 206.
 
-[13]) (content/chap5.tex [14]
+[15]
+<figures/ROC_generic.pdf, id=423, pagebox=cropbox, 433.62pt x 289.08pt>
+File: figures/ROC_generic.pdf Graphic file (type pdf)
+<use figures/ROC_generic.pdf>
+Package pdftex.def Info: figures/ROC_generic.pdf  used on input line 258. on in
+put line 258.
+Package pdftex.def Info: Requested size: 217.42265pt x 144.94986pt on input lin
+e 258.
+File: figures/ROC_generic.pdf Graphic file (type pdf)
+<use figures/ROC_generic.pdf>
+Package pdftex.def Info: figures/ROC_generic.pdf  used on input line 262. on in
+put line 262.
+Package pdftex.def Info: Requested size: 217.4248pt x 144.94986pt on input line
+ 262.
+<figures/ROC_zoom.pdf, id=424, pagebox=cropbox, 433.62pt x 289.08pt>
+File: figures/ROC_zoom.pdf Graphic file (type pdf)
+<use figures/ROC_zoom.pdf>
+Package pdftex.def Info: figures/ROC_zoom.pdf  used on input line 263. on input
+ line 263.
+Package pdftex.def Info: Requested size: 217.4248pt x 144.94986pt on input line
+ 263.
+) (content/chap5.tex [16 <./figures/ROC_generic.pdf> <./figures/ROC_zoom.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/ROC_zoom.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>]
 Chapter 5.
-) (content/chap6.tex [15
+) (content/chap6.tex [17
 
 ]
 Chapter 6.
-) (content/biblio.tex [16
+) (content/biblio.tex [18
 
-] [17
+] [19
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [18]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 65.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30624 strings out of 493333
- 555350 string characters out of 3139363
- 1113049 words of memory out of 3000000
- 33535 multiletter control sequences out of 15000+200000
- 674791 words of font info for 121 fonts, out of 3000000 for 9000
+ 30683 strings out of 493333
+ 556834 string characters out of 3139363
+ 1115267 words of memory out of 3000000
+ 33581 multiletter control sequences out of 15000+200000
+ 663274 words of font info for 118 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,94p,10412b,1824s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,94p,10412b,1823s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -2285,9 +2378,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8
 a.pfb>
-Output written on main.pdf (19 pages, 501420 bytes).
+Output written on main.pdf (21 pages, 588514 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
