@@ -419,7 +419,6 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lm/t1lmtt.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lm/t1lmtt.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmtt8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr5.tfm
 INPUT content/chap2.tex
 INPUT content/chap2.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmbx12.tfm
@@ -427,8 +426,6 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lm/ts1lmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lm/ts1lmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmri7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT content/chap3.tex
 INPUT content/chap3.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/ec-lmr9.tfm
@@ -473,22 +470,62 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/rm-lmbx9.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/lmmib10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/lm/lmbsy10.tfm
-INPUT figures/Rplot02.pdf
-INPUT ./figures/Rplot02.pdf
-INPUT ./figures/Rplot02.pdf
-INPUT ./figures/Rplot02.pdf
-INPUT figures/Rplot03.pdf
-INPUT ./figures/Rplot03.pdf
-INPUT ./figures/Rplot03.pdf
-INPUT ./figures/Rplot03.pdf
-INPUT figures/Rplot03.pdf
-INPUT ./figures/Rplot03.pdf
+INPUT figures/lasso.pdf
+INPUT ./figures/lasso.pdf
+INPUT ./figures/lasso.pdf
+INPUT ./figures/lasso.pdf
+INPUT figures/lasso.pdf
+INPUT ./figures/lasso.pdf
+INPUT figures/kNN_new.pdf
+INPUT ./figures/kNN_new.pdf
+INPUT ./figures/kNN_new.pdf
+INPUT ./figures/kNN_new.pdf
+INPUT figures/kNN_new.pdf
+INPUT ./figures/kNN_new.pdf
+INPUT figures/pruned.pdf
+INPUT ./figures/pruned.pdf
+INPUT ./figures/pruned.pdf
+INPUT ./figures/pruned.pdf
+INPUT figures/tree.pdf
+INPUT ./figures/tree.pdf
+INPUT ./figures/tree.pdf
+INPUT ./figures/tree.pdf
+INPUT figures/pruned.pdf
+INPUT ./figures/pruned.pdf
+INPUT figures/bagging.pdf
+INPUT ./figures/bagging.pdf
+INPUT ./figures/bagging.pdf
+INPUT ./figures/bagging.pdf
+INPUT figures/bagging.pdf
+INPUT ./figures/bagging.pdf
+INPUT figures/RF.pdf
+INPUT ./figures/RF.pdf
+INPUT ./figures/RF.pdf
+INPUT ./figures/RF.pdf
+INPUT figures/meanDecreaseGini.pdf
+INPUT ./figures/meanDecreaseGini.pdf
+INPUT ./figures/meanDecreaseGini.pdf
+INPUT ./figures/meanDecreaseGini.pdf
+INPUT figures/meanDecreaseGini.pdf
+INPUT ./figures/meanDecreaseGini.pdf
+INPUT figures/partialDependence.pdf
+INPUT ./figures/partialDependence.pdf
+INPUT ./figures/partialDependence.pdf
+INPUT ./figures/partialDependence.pdf
+INPUT figures/ROC_generic.pdf
+INPUT ./figures/ROC_generic.pdf
+INPUT ./figures/ROC_generic.pdf
+INPUT ./figures/ROC_generic.pdf
+INPUT figures/ROC_generic.pdf
+INPUT ./figures/ROC_generic.pdf
+INPUT figures/ROC_zoom.pdf
+INPUT ./figures/ROC_zoom.pdf
+INPUT ./figures/ROC_zoom.pdf
+INPUT ./figures/ROC_zoom.pdf
 INPUT content/chap5.tex
 INPUT content/chap5.tex
 INPUT content/chap6.tex
 INPUT content/chap6.tex
-INPUT content/app1.tex
-INPUT content/app1.tex
 INPUT content/biblio.tex
 INPUT content/biblio.tex
 INPUT main.aux

@@ -26,7 +26,7 @@ In our analysis we implement the following statistical learning methods to predi
 	\item \textbf{Classifications trees:} Classification trees stratify the feature space recursively into simple regions and assign the label ``female'' or ``male'' using the majority vote. 
 	Bagging, random forests and gradient tree boosting are also implemented with the aim of improving predictive performance;
 	
-	\item \textbf{Support vector machines (SVM):} SVM is also a non-parametric method that perform well in classification problems where there is a clear margin of separation. We experiment with \num{2} kernels; the linear and the radial basis function~(RBF).
+	\item \textbf{Support vector machines (SVM):} SVM is also a non-parametric method that performs well in classification problems where there is a clear margin of separation. We experiment with \num{2} kernels; the linear and the radial basis function~(RBF).
 \end{itemize}
 For an exhaustive description of the classification methods, please refer to~\cite{ESL_2001}.
 \section{Classification based on the fundamental frequency}
@@ -68,7 +68,7 @@ The results, summarized in Table~\ref{tab_res_meanfun}, show that the classifica
 Regarding the classifiers, it can be seen that some of the ones described in Section~\ref{sec_considered_classif} are not mentioned in Table~\ref{tab_res_meanfun}. Indeed, they do not make sense when considering only one feature for classification. 
 About the relative performance of the different classifiers, the results are homogeneous around the average classification error and all the classifiers, even the simplest ones, perform well.
 
-Such a results may be justified by the very low overlap between the ``male'' and ``female'' distributions observed in Chapter~\ref{chapter_data_exploration}. Indeed, it can be noticed on Figure~\ref{fig_facet} that even a simple threshold of ``meanfun" around a value of \num{0.15} would perform relatively well. 
+Such a result may be justified by the very low overlap between the ``male'' and ``female'' distributions observed in Chapter~\ref{chapter_data_exploration}. Indeed, it can be noticed on Figure~\ref{fig_facet} that even a simple threshold of ``meanfun" around a value of \num{0.15} would perform relatively well. 
 
 \section{Classification based on a $80/20$ split of the dataset}
 \label{sec_naive_strat}
@@ -149,25 +149,25 @@ We use \num{10}-fold cross validation with one-standard-error rule to find that 
 %%%%%%%%%%%% END OF FIGURE %%%%%%%%%%%
 \subsection{Tree-based methods}
 \paragraph{Classification trees}
-We begin with fitting a large unpruned tree to our data. We use the cross-entropy impurity measure to grow our tree and obtain a test error of \num{0.038}. Although its predictive performance is quite good in our case, its high complexity prevents it from being interpretable as Figure~\ref{fig_tree} manifests.
+We begin with fitting a large unpruned tree to our data. We use the cross-entropy impurity measure to grow our tree and obtain a test error of \num{0.038}. Although its predictive performance is quite good in our case, its high complexity prevents it from being interpretable as Figure~\ref{fig_unpruned_tree} manifests.
 
-After fitting a large tree, it is sensible to prune it in order to improve its interpret-ability and avoid overfitting. We prune our tree using \num{10}-fold cross validation to determine the cost-complexity parameter, and misclassification error as the loss function. Although the test error has slightly increased, the pruned tree can now be used to convey meaningful results as shown on Figure~\ref{fig_pruned_tree}. We also observe that ``meanfun'' is used in the first node, confirming, for one more time, its integral role.
+After fitting a large tree, it is sensible to prune it in order to improve its interpretability and avoid overfitting. We prune our tree using \num{10}-fold cross validation to determine the cost-complexity parameter, and misclassification error as the loss function. Although the test error has slightly increased, the pruned tree can now be used to convey meaningful results as shown on Figure~\ref{fig_pruned_tree}. We also observe that ``meanfun'' is used in the first node, confirming, for one more time, its integral role.
 %%%%%%%%%%%% FIGURE %%%%%%%%%%%
 \setlength{\BoxPlotFigWidth}{0.48\textwidth}
 \settoheight{\BoxPlotFigHeight}{\includegraphics[width=\BoxPlotFigWidth]{figures/pruned.pdf}}
 \begin{figure}[htb]
 	% Maximum length
 	\hfill%
-	\subcaptionbox{\label{fig_tree}}{\includegraphics[height=\BoxPlotFigHeight]{figures/tree.pdf}}\hfill%
+	\subcaptionbox{\label{fig_unpruned_tree}}{\includegraphics[height=\BoxPlotFigHeight]{figures/tree.pdf}}\hfill%
 	\subcaptionbox{\label{fig_pruned_tree}}{\includegraphics[height=\BoxPlotFigHeight]{figures/pruned.pdf}}\hfill\null%
-	\caption{(a)- Unpruned and (b)-pruned tree.}
+	\caption{(a)-Unpruned and (b)-pruned tree.}
 	\label{fig_tree}
 \end{figure}
 %%%%%%%%%%%% END OF FIGURE %%%%%%%%%%%
 \paragraph{Bagging}
-Unpruned trees have low bias but suffer from high variance. Bagging can substantially reduce the variance of unstable procedures like trees, and improve predictive performance. Bagging indeed improves accuracy of our trees, since we obtain a test error of \num{0.0237}. We also stress the importance of Out-of-Bag error estimate, which, in our case, is quite close to the test error, as it can be observed on Figure~\ref{fig_oob_bagging}.
+Unpruned trees have low bias but suffer from high variance. Bagging can substantially reduce the variance of unstable procedures like trees, and improve predictive performance. Bagging indeed improves accuracy of our trees, since we obtain a test error of \num{0.0237}. Figure~\ref{fig_oob_bagging} depicts the evolution of class-specific training error and Out-of-Bag error estimate as the number of bagged trees increases.
 \paragraph{Random forests}
-We proceed our analysis with running a random forest. We are particularly interested in this method, since random forests provide measures of variable importance. Mean decrease accuracy and mean decrease gini metrics, the latter being displayed on Fig.~\ref{fig_feature_imp}, indicate that ``meanfun'' is the most influential feature, followed by ``Q25''. The test error is \num{0.0189}, which confirms the superb predictive performance of random forests. Again, Out-of-Bag error estimate gives an accurate estimate of test error as it can be observed on Fig.~\ref{fig_oob_rf}.
+We proceed our analysis with running a random forest. We are particularly interested in this method, since random forests provide measures of variable importance. Mean decrease accuracy and mean decrease gini metrics, the latter being displayed on Fig.~\ref{fig_feature_imp}, indicate that ``meanfun'' is the most influential feature, followed by ``Q25''. The test error is \num{0.0189}, which confirms the superb predictive performance of random forests. Fig.~\ref{fig_oob_rf} illustrates the efficiency of random forests, compared to bagging, in optimizing training error. Fortunately, it does not translate into overfitting in our case.
 %%%%%%%%%%%% FIGURE %%%%%%%%%%%
 \settoheight{\BoxPlotFigHeight}{\includegraphics[width=\BoxPlotFigWidth]{figures/bagging.pdf}}
 \begin{figure}[htb]
@@ -186,8 +186,8 @@ Partial dependence plots are useful to interpret variable importance in complex 
 \begin{figure}[htb]
 	% Maximum length
 	\hfill%
-	\subcaptionbox{\label{fig_partial_dep}}{\includegraphics[height=\BoxPlotFigHeight]{figures/meanDecreaseGini.pdf}}\hfill%
-	\subcaptionbox{\label{fig_feature_imp}}{\includegraphics[height=\BoxPlotFigHeight]{figures/partialDependence.pdf}}\hfill\null%
+	\subcaptionbox{\label{fig_feature_imp}}{\includegraphics[height=\BoxPlotFigHeight]{figures/meanDecreaseGini.pdf}}\hfill%
+	\subcaptionbox{\label{fig_partial_dep}}{\includegraphics[height=\BoxPlotFigHeight]{figures/partialDependence.pdf}}\hfill\null%
 	\caption{(a)-Feature importance based on the mean decrease of gini metric; (b)-Partial dependence with respect to the ``meanfun'' feature.}
 	\label{fig_tree_feature}
 \end{figure}
@@ -202,7 +202,7 @@ Finally, we implement SVM with a gaussian radial kernel. \num{10}-fold cross val
 \subsection{Conclusion}
 The analysis conducted above, using all available features, confirms that ``meanfun'' plays indeed an integral role in gender recognition by voice. Variable importance metrics of random forests highlight that ``meanfun'' is substantially more important than the rest of the features. Simultaneously, the results obtained from (Lasso) logistic regression, pinpoint the fact that some predictors are not significant and, thus, not useful in improving predictive performance.
 
-Nevertheless, we observe that using all features instead of only ``meanfun'', decreases the test errors of discussed models. Since we are also interested in specifying the model with the lowest classification error, it makes sense to take into account all \num{17} variables. However, as Table~\ref{tab_res_naive} indicates, model performances seem to be highly dependent on the initial training/test error split. Therefore, we cannot draw a conclusion about the best classifier and we have to refine our approach of model assessment.
+Nevertheless, we observe that using all features instead of only ``meanfun'', decreases the test errors of discussed models. Since we are also interested in specifying the model with the lowest classification error, it makes sense to take into account all \num{17} variables. However, as Table~\ref{tab_res_naive} indicates, model performance seems to be highly dependent on the initial training/test error split. Therefore, we cannot draw a conclusion about the best classifier and we have to refine our approach of model assessment.
 \section{Classification based on a $50/50$ split of the dataset}
 \label{sec_our_strat}
 \subsection{Experimental settings}
@@ -251,7 +251,7 @@ From Table~\ref{tab_res_our_strategy}, it can be noticed that the proposed strat
  	\item tends to decrease the variance of the error estimate with respect to the seed number. Indeed, the average standard deviation of the error estimate over the different estimators is \num{0.00523} while it was \num{0.00636} with the $80/20$ split.
 \end{itemize} 
 Surprisingly, the variance reduction does not work for all the methods. For instance, QDA has a higher variance with the proposed strategy than with the $80/20$ split. 
-This can be explained by the fact that a \num{5}-fold cross validation is not sufficient to significantly reduce the variance. However, we believe that, given the amount of data, increasing the number of folds may have a significant impact on the bias. 
+This can be explained by the fact that a \num{5}-fold approach for test error estimation is not sufficient to significantly reduce the variance. However, we believe that, given the amount of data, increasing the number of folds may have a significant impact on the bias. 
 
 Nevertheless, the proposed strategy allows us to identify that XGBoost slightly outperforms other tree-based methods as well as the SVM with the RBF kernel. It is therefore chosen as the best classification model for our gender classification task. 
 %%%%%%%%%%%% FIGURE %%%%%%%%%%%
@@ -266,4 +266,4 @@ Nevertheless, the proposed strategy allows us to identify that XGBoost slightly 
 \end{figure}
 %%%%%%%%%%%% END OF FIGURE %%%%%%%%%%%
 
-The receiver operating characteristics~(ROC) curves of XGBoost, Kernel SVM, LDA and kNN ,displayed on Fig.~\ref{fig_roc_generic}, highlight the fact that the different classification methods are close. A finer analysis at the transition, displayed on Fig.~\ref{fig_roc_zoomed}, shows that the superiority of XGBoost does not come from a higher true positive rate than the other methods, but from its ability to reach high true positive rates for for lower false positive rates than the other methods.  
+The receiver operating characteristics~(ROC) curves of XGBoost, Kernel SVM, LDA and kNN ,displayed on Fig.~\ref{fig_roc_generic}, highlight the fact that the different classification methods are close. A finer analysis at the transition, displayed on Fig.~\ref{fig_roc_zoomed}, shows that the superiority of XGBoost does not come from a higher true positive rate than the other methods, but from its ability to reach high true positive rates for lower false positive rates than the other methods.  

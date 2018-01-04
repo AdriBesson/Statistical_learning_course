@@ -111,7 +111,7 @@
       \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{ICASSP, IEEE Int. Conf. Acoust. Speech Signal Process. - Proc.}
+      \field{booktitle}{1988 IEEE Int. Conf. Acoust. Speech Signal Process.}
       \field{title}{{Automatic recognition of gender by voice}}
       \field{year}{1988}
       \field{pages}{603\bibrangedash 606}
@@ -461,7 +461,7 @@
       \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{1996 IEEE Int. Conf. Acoust. Speech, Signal Process. Conf. Proc.}
+      \field{booktitle}{1996 IEEE Int. Conf. Acoust. Speech Signal Process.}
       \field{title}{{Speaker normalization on conversational telephone speech}}
       \field{volume}{1}
       \field{year}{1996}

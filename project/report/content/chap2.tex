@@ -7,7 +7,6 @@
 % v0.1 - 22.12.16                                 %
 % Typeset configuration: pdfLaTeX + Biber         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \chapter{Description of the Dataset}
 \label{chap:dataset}
 
@@ -21,9 +20,9 @@ The dataset takes the form of a ``.csv'' file where each row is composed of the 
 	\item \textbf{meanfreq:} mean frequency (in kHz)
 	\item \textbf{sd:} standard deviation of frequency
 	\item \textbf{median:} median frequency (in kHz)
-	\item \textbf{Q25:} first quantile (in kHz)
-	\item \textbf{Q75:} third quantile (in kHz)
-	\item \textbf{IQR:} interquantile range (in kHz)
+	\item \textbf{Q25:} first quartile (in kHz)
+	\item \textbf{Q75:} third quartile (in kHz)
+	\item \textbf{IQR:} interquartile range (in kHz)
 	\item \textbf{skew:} skewness of the spectrum
 	\item \textbf{kurt:} kurtosis
 	\item \textbf{sp.ent:} spectral entropy
@@ -49,7 +48,7 @@ Before starting the data analysis, it is important to perfectly understand the f
 
 As already pointed out in Section~\ref{sec:gen_cons}, the extracted features are all related to the spectrum. 
 \paragraph{Frequency-related features}
-The feature ``meanfun'' corresponds to  the mean frequency, \ie{} a weighted average of the frequencies present in the spectrum by the amplitude of the spectral components:
+The feature ``meanfreq'' corresponds to the mean frequency, \ie{} a weighted average of the frequencies present in the spectrum by the amplitude of the spectral components:
 \begin{equation}
 \mu_f = \sum\limits_{i=1}^{N} f_i y_i ,
 \end{equation} 
@@ -60,7 +59,7 @@ The feature ``sd'' is the standard deviation of the frequencies, calculated as:
 \sigma_f = \sqrt{\sum\limits_{i=1}^{N}y_i \left(f_i-\mu_f\right)^2}.
 \end{equation}
 
-The feature ``median'' is the median frequency calculated as the frequency where the spectrum is divided into frequency intervals of same energy. The calculation of the quartiles ``IQ25'' and  ``IQ75'' is based on the same criterion. The interquartile range ``IQR'' is calculated as the difference between the first and the first quartile.
+The feature ``median'' is the median frequency calculated as the frequency where the spectrum is divided into frequency intervals of same energy. The calculation of the quartiles ``IQ25'' and ``IQ75'' is based on the same criterion. The interquartile range ``IQR'' is calculated as the difference between the first and the first quartile.
 
 The feature ``mode'' characterizes the dominant frequency of the spectrum, \ie{} the frequency with the highest amplitude. It is very similar to ``peakf'', the peak frequency, which corresponds to the frequency with the highest energy. The fundamental frequency is the lowest frequency of the spectrum.
 
@@ -103,6 +102,6 @@ From the description of the features given in Section~\ref{sec:feat_desc}, a fir
 Indeed, several features are exactly the same or a linear combination of other features:
 \begin{itemize}
 	\item The features ``meanfreq'' and ``centroid'' are exactly similar. So ``centroid'' has been removed;
-	\item The following relationship holds:  ``IQR'' $=$ ``Q75'' $-$ ``Q25''. ``IQR'' has been removed;
-	\item The following relationship holds:  ``dfrange'' $=$ ``maxdom'' $-$ ``mindom''. ``dfrange'' has been removed.
+	\item The following relationship holds: ``IQR'' $=$ ``Q75'' $-$ ``Q25''. ``IQR'' has been removed;
+	\item The following relationship holds: ``dfrange'' $=$ ``maxdom'' $-$ ``mindom''. ``dfrange'' has been removed.
 \end{itemize}
